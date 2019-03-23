@@ -31,6 +31,7 @@ A simple style Hexo theme based on Hexo 3.8.0，mainly using the light blue and 
 2. Use `git` to clone `hexo-theme-PureBlue` into the theme folder under your blog project directory.
 
 使用git指令下载该主题到theme文件夹
+
 `cd themes`
 `git clone https://github.com/Chorer/hexo-theme-PureBlue.git`
 

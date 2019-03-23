@@ -33,6 +33,7 @@ A simple style Hexo theme based on Hexo 3.8.0，mainly using the light blue and 
 使用git指令下载该主题到theme文件夹
 
 `cd themes`
+
 `git clone https://github.com/Chorer/hexo-theme-PureBlue.git`
 
 3. Enter the `hexo-theme-PureBlue` folder and copy the `PureBlue` folder into the `themes` folder 

@@ -1,0 +1,6 @@
+<section class="posts">
+	<% page.posts.each(function (item){ %>
+		<%- partial('_partial/article-excerpt',{item: item}) %>
+	<% })%>
+</section>
+<%- partial('_partial/paginator') %>

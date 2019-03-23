@@ -1,0 +1,27 @@
+# Header
+menu:
+  Home: /
+  Categories: /categories
+  Archives: /archives
+  Tags: /tags
+  About: /about
+
+# Just put your favourite pic into theme directory(source/images)
+# Site favicon
+favicon: /images/avatar.gif
+
+# copyright info text
+copyright_info: Copyright © 2018 - 2019 My Blog
+
+
+# Post Info text
+# post_date: Date
+# post_tags: Tags
+
+# Read More text
+# excerpt_link: Read More
+
+
+
+
+

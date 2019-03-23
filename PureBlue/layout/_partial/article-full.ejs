@@ -1,0 +1,25 @@
+<article class="post"> 
+		<div class="post-title">
+			<a class="post-title-link" href="<%- config.root %><%- item.path %>">
+				<%- item.title || item.link || 'Untitled' %>
+			</a>
+		</div>
+		<div class="post-time">
+				<span class="time-text">
+					<%= __('Post-info.Date') %>:&nbsp
+				</span>
+				<span class="time">
+					<%= item.date.format(config.date_format) %>
+				</span>
+		</div>
+		<div class="post-content">
+			<%- item.content %>
+		</div>
+</article>
+<span class="top">
+	<a class="to-top">
+		<svg>
+			<path d="M9.314 0l9.313 9.314-2.12 2.121-7.193-7.192-7.193 7.192L0 9.314z" ></path>
+		</svg>
+	</a>
+</span>

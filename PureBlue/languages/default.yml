@@ -1,0 +1,17 @@
+Menu:
+  Home: Home
+  Categories: Categories
+  Archives: Archives
+  Tags: Tags
+  About: About
+
+Paginator:
+  Prev: Prevous Page
+  Next: Next page
+
+Readmore:
+  Text: Read More
+
+Post-info:
+  Date: Date
+  Tags: Tags    

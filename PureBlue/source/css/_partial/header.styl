@@ -1,0 +1,39 @@
+.header{
+	background: -webkit-linear-gradient(left, #2874B2 0%, #29c6cd 100%);
+	font-family: "Comic Sans MS";
+	height: 320px;
+	display: flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content:center ;
+
+	.blog-title .logo{
+		text-decoration: none;
+		color: white;
+		font-size: 3.3em;
+		font-weight: bold;
+	}
+	.menu{
+		margin-top: 40px;
+		margin-left: 50px;
+		.menu-item{
+			display: inline-block;
+			margin: 4px;
+			border: 2px solid white;
+			border-radius: 18px;
+			padding-right: 10px;
+			padding-left: 10px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			&:hover{
+				opacity: 0.7;
+				border: 2px dashed #48D1CC;
+			}
+		}
+		.menu-item-link{
+			text-decoration: none;
+			color: white;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+<div class="tag-page-container">
+     <h2 class="tag-page-title"><%= page.tag %></h2>
+     <div class="tag-page-cards">
+          <% page.posts.sort('date', -1).each(function(post){ %>
+             <section class="posts">
+                <%- partial('_partial/article-excerpt', { item: post, index: true, pin: false }) %>
+             </section>	
+          <% }) %>
+     </div>
+</div>
+
+
+

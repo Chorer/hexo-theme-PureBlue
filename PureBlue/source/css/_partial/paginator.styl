@@ -1,0 +1,61 @@
+.pager-nav{
+	margin: 0 auto;
+	width: 70%;
+	.pager-ul{
+		position: relative;
+		height: 30px;
+		.pager-li{
+			display: inline-block;
+			padding-top: 4px;
+			padding-bottom: 4px;
+			width: auto;
+			height: auto;
+			list-style: none;
+			&:hover{
+				opacity: 0.7;
+				box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.19);
+			}
+			a{
+				font-family: "Comic Sans MS";
+				text-decoration: none;
+				color: white;
+				padding: 14px;
+			}
+		}
+		#pager-left{			
+			position: absolute;
+			left: -100px;
+			border-right: none;
+			background-color: rgb(40,122,180);
+			} 
+		#pager-left:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -20px;
+     		height: 0;
+     		width: 0;
+     		border-top: 20px solid transparent;
+     		border-right: 20px solid rgb(40,122,180);
+     		border-bottom: 20px solid transparent; 
+			}
+		
+		#pager-right{
+			position: absolute;
+			right: -100px;
+			border-right: none;
+			background-color: rgb(41,183,200);
+			} 
+		#pager-right:before{
+			content: '';
+     		position: absolute;
+   			top: 0;
+    		right: -20px;
+     		height: 0;
+     		width: 0;
+     		border-top: 20px solid transparent;
+     		border-left: 20px solid rgb(41,183,200);
+     		border-bottom: 20px solid transparent;
+			}	
+		}
+}

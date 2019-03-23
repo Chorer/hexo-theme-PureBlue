@@ -1,0 +1,16 @@
+<% var items = site.categories %>
+<% var title = _('categories') %>
+
+<div class="categories-main-container">
+<% items.forEach(function(item){ %>
+	<div class="category">
+		<span class="point"></span>
+		<span>
+			<a href="#">
+				<%- item.name %>
+			</a>	
+		<span>
+	</div>
+<% }) %>
+</div>
+

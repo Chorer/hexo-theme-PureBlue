@@ -1,0 +1,63 @@
+.tags-main-container{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: .4rem;
+	padding-right: .4rem;
+	width: 100%;
+	.tagscloud{
+		margin: 0 3rem 3rem;
+		padding: 0 1rem;
+		min-height: 20rem;
+		a{
+			color: #acb3c2;
+			text-decoration: none;
+			padding: .5rem;
+			padding-bottom: .1rem;
+			margin: .2rem;
+			margin-right: 1rem;
+			border-bottom: 1.5px solid #acb3c2;
+			line-height: 2;
+			white-space: nowrap;
+			-webkit-transition: .2s;
+			transition: .2s;
+			opacity: 1;
+		}
+		.tags-a:hover{
+				margin-left: 1em;
+		}
+	}
+}
+.tag-page-container{
+	.tag-page-title{
+		display: inline-block;
+		position: relative;
+		left: 2px;
+		top: 4px;
+		background-color: rgb(41,183,200);
+		color: black;
+		font-family: "Comic Sans MS";
+		font-weight: normal;
+		padding-left: 30px;
+		padding-right: 20px;
+		&:hover{
+			box-shadow: 10px 10px 5px #888888;
+			opacity: 0.8;
+		}
+	}
+	.tag-page-title:before{
+			content: '';
+     		position: absolute;
+   			top: -1px;
+    		right: -20px;
+     		height: 0;
+     		width: 0;
+     		border-top: 23px solid transparent;
+     		border-left: 20px solid rgb(41,183,200);
+     		border-bottom: 23px solid transparent;
+		}	
+}
+
+
+
+

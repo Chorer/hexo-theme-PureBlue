@@ -1,0 +1,28 @@
+<article class="post"> 
+		<div class="post-title">
+			<a class="post-title-link" href="<%- config.root %>
+				<%- item.path %>"><%- item.title || 'Untitled' %>
+			</a>
+		</div>
+		<div class="post-time">
+				<span class="time-text">
+					<%= __('Post-info.Date') %>:&nbsp
+				</span>
+				<span class="time">
+					<%= item.date.format(config.date_format) %>
+				</span>
+		</div>
+		<div class="post-tags">
+				<%- partial('article-tags')%>
+		</div>
+		<div class="post-content">
+			<%- item.excerpt || item.content %>
+		</div>
+		<% if(item.excerpt){ %>
+			<p class="more-btn">
+				<a href="<%- config.root%><%- item.path %>">
+					<%= __('Readmore.Text') %>&nbsp>>
+				</a>
+			</p>
+		<% } %>
+</article>

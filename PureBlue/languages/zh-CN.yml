@@ -1,0 +1,17 @@
+Menu:
+  Home: 首页
+  Categories: 分类
+  Archives: 归档
+  Tags: 标签
+  About: 关于
+
+Paginator:
+  Prev: 上一页
+  Next: 下一页
+
+Readmore:
+  Text: 阅读更多
+
+Post-info:
+  Date: 日期
+  Tags: 标签    

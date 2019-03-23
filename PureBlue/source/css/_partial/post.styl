@@ -1,0 +1,138 @@
+.posts{
+	.post{
+	display: flex;
+	display:-webkit-flex;
+	flex-direction: column;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content:center;
+	width: 870px;
+	margin: 1em auto;
+	padding: 30px 50px;
+	border-top: 8px solid rgb(41,183,200);
+	border-radius: 15px;
+	font-size: 0.8em;
+	background-color: white;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 
+				0 3px 1px -2px rgba(0,0,0,.06), 
+				0 1px 5px 0 rgba(0,0,0,.12), 
+				0 -1px 0.5px 0 rgba(0,0,0,.09);
+	&:hover{
+			box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.19);
+		}
+	}
+	.post:first-child{
+		margin-top:20px;
+	}
+	.post .post-title{
+		padding-bottom: 15px;
+		font-size: 1.2em;
+		.post-title-link{
+			color: #287ab4;
+			text-decoration: none;
+		}
+	}
+	.post .post-time{
+		color: #BABABA;
+		.time-text{
+			font-weight: bold;
+			}
+		}
+	.post .post-tags{
+		padding-bottom: 15px;
+		.post-tags-list{
+			color: #bababa;
+			font-weight: bold;
+		}
+		a{	
+			color: #bababa;
+			text-decoration: none;
+			padding-right: 8px;
+			&:hover{
+				border-bottom: 1.5px solid #bababa;
+			}
+		}
+	}	
+	.post .post-content{
+		a{
+			color: #368CCB;
+			text-decoration: none;
+		}
+		.code,code{
+			max-width: 800px;
+			display: inline-block;
+			overflow-x:auto;
+			color: #c7254e;
+			font-size: 1em;
+			font-family: Consolas;
+			vertical-align: middle;
+			background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+			}	
+		}
+		img{
+			max-width: 600px;
+			display: block;
+			margin: 0 auto;
+		}	
+		table{
+			width: 100%;
+			border-collapse: collapse;
+			th{
+				border: 1px solid #E6E6E6;
+				font-weight: bold;
+				padding: 10px;
+				background-color: #F3F3F3;
+			}
+			td{
+				border: 1px solid #E6E6E6;
+				padding: 10px;
+			}	
+		}	
+		.more-btn{
+			display: inline-block;
+			width: auto;
+			height: auto;
+			padding: 4px;
+			padding-left: 16px;
+			padding-right: 16px;
+			border-radius: 18px;
+			border: 2px solid rgb(41,183,200);
+			background-color: rgb(41,183,200);
+			&:hover{
+				opacity: 0.7;
+				border: 2px dashed #48D1CC;
+			}
+			a{
+				font-family: "Comic Sans MS";
+				color: white;
+				text-decoration: none;			
+			}
+		}
+		blockquote{
+			margin: 0 0 1rem;
+		    padding: .5rem .8rem;
+		    border-left: 5px solid #29b7c8;
+		    background-color: #f5f5f5;
+		    list-style: none;
+		    word-break: break-all;
+		}
+}
+.top{
+	.to-top{
+		padding: 20px 24px 0 24px;
+		border-radius: 4px;
+		background-color: #ccc;
+		transition: background-color 0.6s;
+		&:hover{
+			opacity: 0.8;
+			background-color: #287ab4;
+		}
+		svg{
+			width: 18px;
+			height: 30px;
+			path{
+				fill: white;
+			}
+		}
+	}
+}

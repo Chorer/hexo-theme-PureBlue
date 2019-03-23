@@ -1,0 +1,25 @@
+<section class="archive">
+  <% let years = {}; %>
+  <%
+    site.posts.each(post => {
+      const y = post.date.year();
+      if (!years[y]) {
+        years[y] = [];
+      }
+      years[y].push(post);
+    })
+  %>
+  <% for (let year of Object.keys(years).reverse()) { %>
+    <%- partial('_partial/archive', { year: year, posts: years[year].reverse() }) %>
+  <% } %>
+<section>
+
+
+
+
+
+
+
+
+
+  

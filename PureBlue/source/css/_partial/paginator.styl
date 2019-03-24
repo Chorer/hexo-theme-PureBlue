@@ -1,9 +1,20 @@
 .pager-nav{
 	margin: 0 auto;
 	width: 70%;
+	@media screen and (max-width:1024px){
+					position: relative;
+					width: 1030px;
+				}
+	@media screen and (max-width:970px){
+					position: relative;
+					width: 970px;
+				} 
 	.pager-ul{
 		position: relative;
 		height: 30px;
+		@media screen and (max-width:1024px){
+					position: static;
+				} 
 		.pager-li{
 			display: inline-block;
 			padding-top: 4px;
@@ -27,6 +38,9 @@
 			left: -100px;
 			border-right: none;
 			background-color: rgb(40,122,180);
+			@media screen and (max-width:1024px){
+					left: 25%;
+				}
 			} 
 		#pager-left:before{
 			content: '';
@@ -45,6 +59,9 @@
 			right: -100px;
 			border-right: none;
 			background-color: rgb(41,183,200);
+			@media screen and (max-width:1024px){
+					right: 30%;
+				} 
 			} 
 		#pager-right:before{
 			content: '';
@@ -58,4 +75,4 @@
      		border-bottom: 20px solid transparent;
 			}	
 		}
-}
+	}	

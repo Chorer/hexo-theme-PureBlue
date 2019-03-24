@@ -3,24 +3,22 @@
 	margin-bottom: 40px;
 	min-height: 30px;
 	.category{
-		display: relative;
 		padding-bottom: 8px;
+		padding-left: 25px;
 		.point{
 			display: inline-block;
 			width: 13px;
 			height: 13px;
-			margin-top: 8px;
-			margin-left: -6px;
-			position: absolute;
-			left: 220px;
 			background-color: rgb(41,183,200);
 			clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+			-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 		}
-		span a{
+		a{	
+			left: 200px;
 			text-decoration: none;
+			padding-left: 10px;
 			color: rgb(41,183,200);
 			transition: border-bottom 1s ease-in;
-			position: relative;
 			&:hover{
 				text-decoration: underline;
 			}

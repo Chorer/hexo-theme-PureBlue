@@ -6,50 +6,51 @@
 					width: 970px;
 				}
 	.post{
-	display: flex;
-	display:-webkit-flex;
-	flex-direction: column;
-	align-items:center;
-	-webkit-align-items:center;
-	justify-content:center;
-	width: 870px;
-	@media screen and (max-width:1024px){
-					width: 1030px;
-					padding: 0;
-				}
-	@media screen and (max-width:970px){
-					width: 970px;
-					padding: 0;
-				}
-	margin: 1em auto;
-	padding: 30px 50px;
-	border-top: 8px solid rgb(41,183,200);
-	border-radius: 15px;
-	font-size: 0.8em;
-	background-color: white;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 
-				0 3px 1px -2px rgba(0,0,0,.06), 
-				0 1px 5px 0 rgba(0,0,0,.12), 
-				0 -1px 0.5px 0 rgba(0,0,0,.09);
-	&:hover{
-			box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.19);
-		}
+		display: flex;
+		display:-webkit-flex;
+		flex-direction: column;
+		align-items:center;
+		-webkit-align-items:center;
+		justify-content:center;
+		width: 870px;
+		@media screen and (max-width:1024px){
+						width: 1030px;
+						padding: 0;
+					}
+		@media screen and (max-width:970px){
+						width: 970px;
+						padding: 0;
+					}
+		margin: 1em auto;
+		padding: 30px 50px;
+		border-top: 5px solid rgb(41,183,200);
+		font-size: 0.8em;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 
+					0 3px 1px -2px rgba(0,0,0,.06), 
+					0 1px 5px 0 rgba(0,0,0,.12), 
+					0 -1px 0.5px 0 rgba(0,0,0,.09);
+		&:hover{
+				box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.19);
+			}
 	}
 	.post:first-child{
 		margin-top:20px;
 	}
 	.post .post-title{
-		padding-bottom: 15px;
 		@media screen and (max-width:1024px){
 					padding-top: 20px;
 				}
 		@media screen and (max-width:970px){
 					padding-top: 20px;
 				}
+		padding-bottom: 15px;		
 		font-size: 1.2em;
 		.post-title-link{
-			color: #287ab4;
+			color: black;
 			text-decoration: none;
+			&:hover{
+				color:#29b7c8;
+			}
 		}
 	}
 	.post .post-time{
@@ -120,19 +121,14 @@
 			display: inline-block;
 			width: auto;
 			height: auto;
-			padding: 4px;
-			padding-left: 16px;
-			padding-right: 16px;
-			border-radius: 18px;
+			padding: 3px 18px 2px 20px;
 			border: 2px solid rgb(41,183,200);
-			background-color: rgb(41,183,200);
+			border-radius: 2px;
 			&:hover{
-				opacity: 0.7;
-				border: 2px dashed #48D1CC;
+				background-color: rgb(41,183,200);
 			}
 			a{
-				font-family: "Comic Sans MS";
-				color: white;
+				color: black;
 				text-decoration: none;			
 			}
 		}
@@ -153,7 +149,7 @@
 		transition: background-color 0.6s;
 		&:hover{
 			opacity: 0.8;
-			background-color: #287ab4;
+			background-color: #29b7c8;
 		}
 		svg{
 			width: 18px;

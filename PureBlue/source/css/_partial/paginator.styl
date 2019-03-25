@@ -1,6 +1,4 @@
 .pager-nav{
-	margin: 0 auto;
-	width: 70%;
 	@media screen and (max-width:1024px){
 					position: relative;
 					width: 1030px;
@@ -10,69 +8,46 @@
 					width: 970px;
 				} 
 	.pager-ul{
-		position: relative;
-		height: 30px;
 		@media screen and (max-width:1024px){
 					position: static;
-				} 
+				}
+		position: relative;
+		height: 30px;		 
 		.pager-li{
 			display: inline-block;
+			position: absolute;
 			padding-top: 4px;
 			padding-bottom: 4px;
-			width: auto;
-			height: auto;
 			list-style: none;
-			&:hover{
-				opacity: 0.7;
-				box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.19);
-			}
+			background-color: #29b7c8;
 			a{
-				font-family: "Comic Sans MS";
+				font-family: "Source Sans Pro";
+				font-size: 18px;
 				text-decoration: none;
 				color: white;
 				padding: 14px;
+				&:hover{
+					text-decoration: underline;
+				}
 			}
 		}
-		#pager-left{			
-			position: absolute;
-			left: -100px;
-			border-right: none;
-			background-color: rgb(40,122,180);
+		#pager-left{
 			@media screen and (max-width:1024px){
 					left: 25%;
-				}
-			} 
-		#pager-left:before{
-			content: '';
-			position: absolute;
-			top: 0;
-			left: -20px;
-     		height: 0;
-     		width: 0;
-     		border-top: 20px solid transparent;
-     		border-right: 20px solid rgb(40,122,180);
-     		border-bottom: 20px solid transparent; 
-			}
-		
+				}	
+			clip-path: polygon(15% 0%, 100% 1%, 100% 100%, 15% 100%, 0% 50%);
+			-webkit-clip-path: polygon(15% 0%, 100% 1%, 100% 100%, 15% 100%, 0% 50%);	
+			padding-left: 18px;	
+			left: 0;
+			} 		
 		#pager-right{
-			position: absolute;
-			right: -100px;
-			border-right: none;
-			background-color: rgb(41,183,200);
 			@media screen and (max-width:1024px){
 					right: 30%;
-				} 
-			} 
-		#pager-right:before{
-			content: '';
-     		position: absolute;
-   			top: 0;
-    		right: -20px;
-     		height: 0;
-     		width: 0;
-     		border-top: 20px solid transparent;
-     		border-left: 20px solid rgb(41,183,200);
-     		border-bottom: 20px solid transparent;
-			}	
+				}
+			clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+			-webkit-clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+			padding-right: 20px;
+			right: -10px; 
+			} 	
 		}
 	}	

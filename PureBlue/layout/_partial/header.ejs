@@ -1,4 +1,10 @@
 <header class="header">
+	<span>
+		<i class="point"></i>
+		<a href="https://github.com/Chorer/hexo-theme-PureBlue/tree/master/PureBlue">
+			PureBlue
+		</a>	
+	</span>
 	<div class="blog-title">
 		<a href="<%- url_for() %>" class="logo"><%= config.title %></a>
 	</div>
@@ -6,7 +12,9 @@
 		<ul class="menu">
 			<% for(name in theme.menu) { %>
 				<li class="menu-item">
-					<a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%= name %></a>
+					<a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link">
+						<%= name %>
+					</a>
 				</li>
 			<% } %>	
 		</ul>

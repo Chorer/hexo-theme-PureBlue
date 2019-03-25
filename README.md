@@ -19,13 +19,13 @@ A simple style Hexo theme based on Hexo 3.8.0，mainly using the light blue and 
 ## Screenshots 截图
 
 ##### Home Page
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/show1.png)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/qqq.png)
 
 ##### Archive Page
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/show2.png)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/qq.png)
 
 ##### Tags Page
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/show3.png)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/q.png)
 
 
 ## Install the theme 安装主题

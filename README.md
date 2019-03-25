@@ -17,8 +17,14 @@ A simple style Hexo theme based on Hexo 3.8.0，mainly using the light blue and 
 
 
 ## Screenshots 截图
+
+##### Home Page
 ![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/show1.png)
+
+##### Archive Page
 ![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/show2.png)
+
+##### Tags Page
 ![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/show3.png)
 
 
@@ -104,8 +110,10 @@ type: about
 
 
 ## Changelogs 更新日志
-Not yet...
-待定...
+
+2019.3.25
+* Change css for a more flat style.  
+修改相关样式，现在界面更加趋向扁平化了
 
 ## License  协议
 

@@ -10,6 +10,18 @@ menu:
 # Site favicon
 favicon: /images/avatar.gif
 
+# valine comments
+valine:
+  enable: false 
+  appid:   # your App ID
+  appkey:  # your App Key
+  notify: false      # mail notifier 
+  verify: false     # Verification code
+  placeholder: Just talk here...... # comment box placeholder
+  avatar: mm # gravatar style
+  pageSize: 10 # pagination size
+  visitor: false # Statistics of article visits
+
 # copyright info text
 copyright_info: Copyright © 2018 - 2019 My Blog
 

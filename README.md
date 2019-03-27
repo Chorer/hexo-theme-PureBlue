@@ -103,8 +103,9 @@ type: about
 - [ ] Support responsive design 采用响应式设计
 - [ ] Mobile adaptation 移动端适配
 - [ ] Support styling the codequote highlight 支持自定义代码高亮样式
-- [ ] Support TOC  支持TOC
-- [ ] Support the third-party share and comment systems  支持第三方分享和评论系统
+- [x] Support TOC  支持TOC
+- [x] Support the third-party comment plugin  支持第三方评论系统
+- [ ] Support the third-party share plugin  支持第三方分享系统
 - [ ] Support website statistics 支持网站统计
 
 

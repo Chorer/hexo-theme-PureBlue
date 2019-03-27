@@ -1,6 +1,6 @@
 <div class="category-page-container">
-	<h2 class="tag-page-title"><%= page.category %></h2>
-     <div class="tag-page-cards">
+     <h2 class="category-page-title"><%= page.category %></h2>
+     <div class="category-page-cards">
           <% page.posts.each(function(post){ %>
              <section class="posts">
                 <%- partial('_partial/article-excerpt', { item: post, index: true, pin: false }) %>

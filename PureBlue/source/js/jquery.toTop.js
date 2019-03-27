@@ -62,4 +62,4 @@
     };
     
 }( jQuery ));
-$('.to-top').toTop({offset: 100,right: 2,bottom: 202});
+$('.to-top').toTop({offset: 120,right:270,bottom: 500});

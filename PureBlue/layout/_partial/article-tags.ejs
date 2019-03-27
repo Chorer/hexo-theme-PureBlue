@@ -2,7 +2,7 @@
 <%
     var tags = [];
     item.tags.forEach(function(tag){
-        tags.push('<a href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+        tags.push('<a href="' + config.root + tag.path + '"># ' + tag.name + '</a>');
     });
 %>
     <span class="post-tags-list"><%= __('Post-info.Tags') %>&nbsp:</span>

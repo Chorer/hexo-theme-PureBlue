@@ -18,14 +18,11 @@ A simple style Hexo theme based on Hexo 3.8.0，mainly using the light blue and 
 
 ## Screenshots 截图
 
-##### Home Page
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/qqq.png)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/s1.png)
 
-##### Archive Page
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/qq.png)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/s3.png)
 
-##### Tags Page
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/q.png)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/s2.png)
 
 
 ## Install the theme 安装主题
@@ -98,7 +95,7 @@ type: about
 
 ## ToDoList  更新计划
 
-- [ ] Add the category page  增加分类页面
+- [x] Add the category page  增加分类页面
 - [ ] Completely using vanilla JavaScript instead of jQuery 原生JavaScript实现，完全去除jQuery库
 - [ ] Support responsive design 采用响应式设计
 - [ ] Mobile adaptation 移动端适配
@@ -115,6 +112,10 @@ type: about
 2019.3.25
 * Change css for a more flat style.  
 修改相关样式，现在界面更加趋向扁平化了
+* Fix the bug that category page can't display
+修复分类页无法正常显示的bug.
+* Improve the navbar
+改进导航栏
 
 ## License  协议
 

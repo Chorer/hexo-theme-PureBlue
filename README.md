@@ -22,8 +22,6 @@ A simple style Hexo theme based on Hexo 3.8.0，mainly using the light blue and 
 
 ![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/s3.png)
 
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/s2.png)
-
 
 ## Install the theme 安装主题
 
@@ -101,6 +99,7 @@ type: about
 - [ ] Mobile adaptation 移动端适配
 - [ ] Support styling the codequote highlight 支持自定义代码高亮样式
 - [x] Support TOC  支持TOC
+- [x] Support fancybox  支持fancybox图片查看
 - [x] Support the third-party comment plugin  支持第三方评论系统
 - [ ] Support the third-party share plugin  支持第三方分享系统
 - [ ] Support website statistics 支持网站统计
@@ -111,11 +110,18 @@ type: about
 
 2019.3.25
 * Change css for a more flat style.  
-修改相关样式，现在界面更加趋向扁平化了
+『修改相关样式，现在界面更加趋向扁平化了』
+
+2019.3.27
 * Fix the bug that category page can't display
-修复分类页无法正常显示的bug.
+『修复分类页无法正常显示的bug』
 * Improve the navbar
-改进导航栏
+『改进导航栏』
+
+2019.3.29
+* Add support for fancybox 
+『增加对fancybox插件的支持，改进图片浏览体验』
+
 
 ## License  协议
 

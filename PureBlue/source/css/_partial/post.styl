@@ -23,7 +23,7 @@
 					}
 		margin: 1em auto;
 		padding: 30px 70px;
-		border-top: 5px solid rgb(41,183,200);
+		border-top: 5px solid $color;
 		font-size: 0.8em;
 		box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 
 					0 3px 1px -2px rgba(0,0,0,.06), 
@@ -49,7 +49,7 @@
 			color: black;
 			text-decoration: none;
 			&:hover{
-				color:#29b7c8;
+				color:$color;
 			}
 		}
 	}
@@ -124,10 +124,10 @@
 			width: auto;
 			height: auto;
 			padding: 3px 18px 2px 20px;
-			border: 2px solid rgb(41,183,200);
+			border: 2px solid $color;
 			border-radius: 2px;
 			&:hover{
-				background-color: rgb(41,183,200);
+				background-color: $color;
 			}
 			a{
 				color: black;
@@ -137,7 +137,7 @@
 		blockquote{
 			margin: 0 0 1rem;
 		    padding: .5rem .8rem;
-		    border-left: 5px solid #29b7c8;
+		    border-left: 5px solid $color;
 		    background-color: #f5f5f5;
 		    list-style: none;
 		    word-break: break-all;
@@ -145,7 +145,7 @@
 }
 .toTop{
 	cursor: pointer;
-	color: #29b7c8;
+	color: $color;
 	font-size: 17px;
 	padding-top: 12px;
 	text-align: center;
@@ -154,7 +154,7 @@
 	}
 }
 .toc{
-	border-top: 5px solid #29b7c8;
+	border-top: 5px solid $color;
 	display: inline-block;
 	position: absolute;
 	background-color: white;
@@ -175,7 +175,7 @@
 	}
 	.list_title{
 		padding-bottom: 6px;
-		color: #29b7c8;
+		color: $color;
 		text-align: center;
 		font-size: 17px;
 	}
@@ -184,7 +184,7 @@
 		color: #34495e;
 		font-size: 13px;
 		&:hover{
-			color: #29b7c8;
+			color: $color;
 		}
 	}
 }
@@ -200,8 +200,8 @@
 		font-size: 1em;
 	}
 	button:hover{
-		background: #29b7c8;
-		border: 1px solid #29b7c8; 
+		background: $color;
+		border: 1px solid $color; 
 		color: white;
 	}
 }

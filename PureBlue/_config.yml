@@ -1,3 +1,11 @@
+# Theme Main Color
+color: 
+  PureBlue: true
+  LightBlue: false
+  DeepBlue: false
+  DarkBlue: false
+  Gradient: false
+
 # Header
 menu:
   Home: /
@@ -26,12 +34,7 @@ valine:
 copyright_info: Copyright © 2018 - 2019 My Blog
 
 
-# Post Info text
-# post_date: Date
-# post_tags: Tags
 
-# Read More text
-# excerpt_link: Read More
 
 
 

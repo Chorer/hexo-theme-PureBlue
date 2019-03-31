@@ -1,20 +1,14 @@
 <% if(page.total>1){ %>
 	<nav class="pager-nav">
-		<ul class="pager-ul">
-			<% if(page.prev){ %>
-				<li class="pager-li" id="pager-left">
-					<a href="<%- config.root %><%- page.prev_link %>">
-						<%= __('Paginator.Prev') %>
-					</a>
-				</li>
-			<% } %>
-			<% if(page.next){ %>
-				<li class="pager-li" id="pager-right">
-					<a href="<%- config.root %><%- page.next_link %>">
-						<%= __('Paginator.Next') %>
-					</a>
-				</li>
-			<% } %>
-		</ul>
+      <%- paginator({
+        prev_text: '&laquo; Prev',
+        next_text: 'Next &raquo;',
+        mid_size: 1
+      }) %>
 	</nav>
 <% } %>	
+
+
+
+
+

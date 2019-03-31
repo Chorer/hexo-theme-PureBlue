@@ -131,6 +131,8 @@ type: about
 『统计分类数、标签数和文章数』
 * Fix the bug that the tags will twinkle once touched
 『修复标签闪烁的bug』
+* Rewirte the paginator and optimize the code
+『重写分页器并优化部分代码』
 
 ## License  协议
 

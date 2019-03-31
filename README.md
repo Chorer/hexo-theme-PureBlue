@@ -143,5 +143,5 @@ type: about
 [MIT License](https://github.com/Chorer/hexo-theme-PureBlue/blob/master/LICENSE)
 
 ## Others 其他
-If you like this theme, Fork && Star. 
+If you like this theme, Fork && Star?
 如果你喜欢这个主题的话，给个Star？

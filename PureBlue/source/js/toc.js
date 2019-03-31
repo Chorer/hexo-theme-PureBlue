@@ -15,15 +15,19 @@ window.onscroll = function()
 };
 
 // 生成目录文本li
-var txt =document.createElement("li");
+var catalog = document.getElementById("post-catalog-text"); 
+var txt = document.createElement("li");
+txt.className="real-catalog-text";
+txt.innerHTML=catalog.innerHTML;
 oDiv.insertBefore(txt,oDiv.children[0]);
-txt.className="list_title";
-txt.innerHTML="目录";
+
+
 
 // 生成返回顶部文本li
+var toTop = document.getElementById("post-toTop-text"); 
 var topper =document.createElement("li");
-topper.className="toTop";
-topper.innerHTML="To the Top";
+topper.className="real-toTop-text";
+topper.innerHTML=toTop.innerHTML;
 oDiv.appendChild(topper);
 
 

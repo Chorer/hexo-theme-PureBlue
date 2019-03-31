@@ -1,7 +1,7 @@
 # Theme Main Color
 color: 
-  PureBlue: true
-  LightBlue: false
+  PureBlue: false
+  GrayBlue: true
   DeepBlue: false
   DarkBlue: false
   Gradient: false
@@ -32,11 +32,4 @@ valine:
 
 # copyright info text
 copyright_info: Copyright © 2018 - 2019 My Blog
-
-
-
-
-
-
-
 

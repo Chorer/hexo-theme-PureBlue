@@ -28,31 +28,23 @@
 }
 .tag-page-container{
 	.tag-page-title{
-		cursor:pointer;
-		display: inline-block;
-		position: relative;
-		margin-bottom: 60px;
-		left: 2px;
-		top: 4px;
-		background-color: $color;
-		color: white;
-		font-family: "Sourece Sans pro";
-		font-weight: normal;
-		font-size: 26px;
-		padding-left: 15px;
-		padding-right: 20px;
+		.tag_title{
+			display: inline-block;
+			margin-top: 40px;
+			padding:10px 0 0 15px;
+			color: #34495e;
+			font-family: "Sourece Sans pro";
+			font-size: 26px;		
+		}
+		.fa-tag{
+			color: $color;
+		}
+	}	
+	.tag-page-cards{
+		.fa-tag{
+			color:#bababa;
+		}
 	}
-	.tag-page-title:before{
-			content: '';
-     		position: absolute;
-   			top: -1px;
-    		right: -20px;
-     		height: 0;
-     		width: 0;
-     		border-top: 20px solid transparent;
-     		border-left: 20px solid $color;
-     		border-bottom: 20px solid transparent;
-		}	
 }
 
 

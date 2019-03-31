@@ -135,6 +135,8 @@ type: about
 2019.3.31
 * Rewirte the paginator and optimize the code
 『重写分页器并优化部分代码』
+* Add some icons with font-awesome
+『引入font-awesome，添加了一些图标』
 
 ## License  协议
 

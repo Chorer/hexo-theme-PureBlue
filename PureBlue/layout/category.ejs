@@ -1,5 +1,7 @@
 <div class="category-page-container">
-     <h2 class="category-page-title"><%= page.category %></h2>
+     <div class="category-page-title">
+     	<i class="fa fa-folder-open fa-lg"></i><h2 class="category_title"><%= page.category %></h2>
+     </div>
      <div class="category-page-cards">
           <% page.posts.each(function(post){ %>
              <section class="posts">

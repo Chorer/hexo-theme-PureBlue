@@ -14,7 +14,13 @@ Readmore:
 
 Post-info:
   Date: Date
-  Tags: Tags  
+  Tags: Tags 
+
+Catalog-info:
+  Text: Article Catalog
+
+toTop-info:
+  Text: To the Top  
 
 Tag-info:
   Text:  tags in total

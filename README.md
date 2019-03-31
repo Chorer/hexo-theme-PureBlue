@@ -1,9 +1,9 @@
 # hexo-theme-PureBlue
 
 ## Introduction 介绍
-A simple style Hexo theme based on Hexo 3.8.0，mainly using the light blue and light green color.
+A simple and blue style Hexo theme based on Hexo 3.8.0.
 
-简约风格的Hexo主题，主打蓝色和绿色，基于Hexo 3.8.0制作。[预览](https://chorer.github.io/)。
+简约的蓝色风格Hexo主题，基于Hexo 3.8.0制作。[预览](https://chorer.github.io/)。
 
 ## Feature 特点
 
@@ -113,7 +113,7 @@ type: about
 『修改相关样式，现在界面更加趋向扁平化了』
 
 2019.3.27
-* Fix the bug that category page can't display
+* Fix the bug that the category page can't display
 『修复分类页无法正常显示的bug』
 * Improve the navbar
 『改进导航栏』
@@ -122,12 +122,20 @@ type: about
 * Add support for fancybox 
 『增加对fancybox插件的支持，改进图片浏览体验』
 
+2019.3.30
+* Refer all js files in one ejs file
+『统一在一个ejs文件中引用所有脚本文件』
+* Change the style of scrollbar
+『改变滚动条样式』
+* Display total counts of categories,tags and posts
+『统计分类数、标签数和文章数』
+* Fix the bug that the tags will twinkle once touched
+『修复标签闪烁的bug』
 
 ## License  协议
 
 [MIT License](https://github.com/Chorer/hexo-theme-PureBlue/blob/master/LICENSE)
 
 ## Others 其他
-If you like this theme, Fork && Star. Come on.
-
+If you like this theme, Fork && Star. 
 如果你喜欢这个主题的话，给个Star？

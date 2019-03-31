@@ -1,17 +1,20 @@
+<p class="posts-counter">
+    ——<%= __('Posts-info.Text1') %>&nbsp<span><%= site.posts.length %>&nbsp</span><%= __('Posts-info.Text2') %>——
+</p>  
 <section class="archive">
-  <% let years = {}; %>
-  <%
-    site.posts.each(post => {
-      const y = post.date.year();
-      if (!years[y]) {
-        years[y] = [];
-      }
-      years[y].push(post);
-    })
-  %>
-  <% for (let year of Object.keys(years).reverse()) { %>
-    <%- partial('_partial/archive', { year: year, posts: years[year].reverse() }) %>
-  <% } %>
+    <% let years = {}; %>
+    <%
+      site.posts.each(post => {
+        const y = post.date.year();
+        if (!years[y]) {
+          years[y] = [];
+        }
+        years[y].push(post);
+      })
+    %>
+    <% for (let year of Object.keys(years).reverse()) { %>
+      <%- partial('_partial/archive', { year: year, posts: years[year].reverse() }) %>
+    <% } %>
 <section>
 
 

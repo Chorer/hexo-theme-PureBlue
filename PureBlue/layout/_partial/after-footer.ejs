@@ -1,9 +1,18 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<%- js('js/jquery.toTop.js') %>
-<%- js('js/tagscloud.js') %>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c5ffe9669609061"></script>
 <%- js('js/navbar.js') %>
 <%- js('js/jquery.fancybox.js') %>
 <%- js('js/jquery.fancyboxStart.js') %>
+<% if(is_post()){ %>
+	<%- js('js/toc.js') %>
+	<%- js('js/jquery.toTop.js') %>
+<% } %>
+
+
+
+
+ 
+
 
 
 

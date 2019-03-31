@@ -2,26 +2,27 @@
 	margin-top: 120px;
 	padding-left: 40px;
 	width: 100%;
-	.tagscloud{
+	.tags-counter{
+		text-align: center;
+		span{
+			font-size: 50px;
+		}
+	}
+	.tags-tagscloud{
 		min-height: 20rem;
 		a{
+			display: inline-block;
 			color: #acb3c2;
 			text-decoration: none;
-			padding: .5rem;
-			padding-bottom: .1rem;
-			margin: .2rem;
-			margin-right: 1rem;
-			border-bottom: 1.5px solid #acb3c2;
-			line-height: 2;
-			white-space: nowrap;
-			-webkit-transition: .2s;
-			transition: .2s;
+			margin: .2rem 1.4rem .8rem .2rem;
+			line-height: 1.2;
+			-webkit-transition: .2s ease-in-out;
+			transition: .2s ease-in-out;
 			&:hover{
 				opacity: 0.6;
+				border-bottom: 1.5px solid #acb3c2;
+				transform: translate(10px, 0);
 			}
-		}
-		.tags-a:hover{
-				margin-left: 1em;
 		}
 	}
 }

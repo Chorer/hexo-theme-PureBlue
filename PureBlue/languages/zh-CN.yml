@@ -16,6 +16,12 @@ Post-info:
   Date: 日期
   Tags: 标签    
 
+Catalog-info:
+  Text: 文章目录  
+
+toTop-info:
+  Text: 返回顶部  
+
 Tag-info:
   Text: 个标签
 

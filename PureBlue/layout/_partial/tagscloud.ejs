@@ -1,13 +1,16 @@
 <div class="tags-main-container">
-	<div class="tagscloud">
+	<p class="tags-counter">
+		——<span><%= site.tags.length %>&nbsp</span><%= __('Tag-info.Text') %>——
+	</p>
+	<div class="tags-tagscloud">
 		<%- tagcloud({
 			min_font: .98,
-			max_font: 3.4,
+			max_font: 2.4,
 			unit: 'rem',
 			amount: 9999,
 			color: true,
-			start_color: 'rgb(41,183,200)',
-			end_color: 'rgb(40,122,180)',
+			start_color: '#34495e',
+			end_color: '#2E3032',
 		}) %>
 	</div>
 </div>

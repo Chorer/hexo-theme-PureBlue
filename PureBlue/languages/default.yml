@@ -6,12 +6,22 @@ Menu:
   About: About
 
 Paginator:
-  Prev: Prevous Page
-  Next: Next page
+  Prev: Previous Page
+  Next: Next Page
 
 Readmore:
   Text: Read More
 
 Post-info:
   Date: Date
-  Tags: Tags    
+  Tags: Tags  
+
+Tag-info:
+  Text:  tags in total
+
+Posts-info:
+  Text1: Wow!
+  Text2:  posts in total  
+
+Categories-info:
+  Text: categories in total 

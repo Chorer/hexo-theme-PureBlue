@@ -88,6 +88,7 @@ And then install the [hexo-prism-plugin](https://github.com/ele828/hexo-prism-pl
 ## About
 * Give a star if you like , fork or just clone to use , and also you can help me fix bugs and add new feature :)
 * If you have any problem or requirement , just open an issue here and i will help you.
+* Will not support IE6, 7, 8.
 
 ## License  
 

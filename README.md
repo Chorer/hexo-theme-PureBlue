@@ -1,35 +1,28 @@
 # hexo-theme-PureBlue
 
-## Introduction 介绍
-A simple and blue style Hexo theme based on Hexo 3.8.0.
 
-简约的蓝色风格Hexo主题，基于Hexo 3.8.0制作。[预览](https://chorer.github.io/)。
+>A simple and blue style theme based on Hexo 3.8.0. [Demo](https://chorer.github.io/)
+基于Hexo 3.8.0制作的简约蓝色风格主题。[预览](https://chorer.github.io/)。
 
-## Feature 特点
+## Features 特点
 
 1.Using Stylus as css preprocessor and ejs as template engine
 
 使用Stylus作为css预处理器，ejs作为模板引擎
 
-2.Support zh-CN and en by default（You can also extend it by editing the yml file）
+2.Support zh-CN and en by default
 
-支持中文和英文（你可以通过编辑yml文件添加更多语言）
-
-
-## Screenshots 截图
-
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/s1.png)
-
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/s3.png)
+支持中文和英文
 
 
-## Install the theme 安装主题
+## Screenshot 截图
 
-1. To use the theme,you need to build the basic blog firstly.Just follow the [hexo official document](https://hexo.io/zh-cn/)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pb.png)
 
-要使用该主题，你首先要有自己的Hexo博客。前往Hexo官网查阅文档。
 
-2. Use `git` to clone `hexo-theme-PureBlue` into the theme folder under your blog project directory.
+## Install  安装
+
+1. Use `git` to clone `hexo-theme-PureBlue` into the theme folder under your blog project directory.
 
 使用git指令下载该主题到theme文件夹
 
@@ -37,11 +30,11 @@ A simple and blue style Hexo theme based on Hexo 3.8.0.
 
 `git clone https://github.com/Chorer/hexo-theme-PureBlue.git`
 
-3. Enter the `hexo-theme-PureBlue` folder and copy the `PureBlue` folder into the `themes` folder 
+2. Enter the `hexo-theme-PureBlue` folder and copy the `PureBlue` folder into the `themes` folder 
 
 将hexo-theme-PureBlue中的PureBlue文件夹复制到themes文件夹中
 
-4. Modify the root `_config.yml` and change the value of the `theme` to `Pure Blue`.
+3. Modify the root `_config.yml` and change the value of the `theme` to `Pure Blue`.
 
 修改站点_config.yml文件---theme：PureBlue
 

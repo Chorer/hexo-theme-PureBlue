@@ -55,7 +55,7 @@ And then install the [hexo-prism-plugin](https://github.com/ele828/hexo-prism-pl
 - [ ] Support website statistics 
 - [ ] Completely using vanilla JavaScript instead of jQuery 
 - [ ] Support responsive design 
-- [ ] Mobile adaptation 移动端适配
+- [ ] Mobile adaptation 
 - [ ] Support styling the codequote highlight 
 
 

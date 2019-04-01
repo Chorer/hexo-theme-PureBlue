@@ -5,16 +5,16 @@ Menu:
   Tags: 标签
   About: 关于
 
-Paginator:
-  Prev: 上一页
-  Next: 下一页
-
 Readmore:
   Text: 阅读更多
 
 Post-info:
   Date: 日期
-  Tags: 标签    
+  Tags: 标签 
+  Time: 阅读时长
+  Time_unit: 分钟
+  Count: 总字数
+  Count_unit: 字   
 
 Catalog-info:
   Text: 文章目录  
@@ -31,3 +31,4 @@ Posts-info:
 
 Categories-info:
   Text: 个分类    
+

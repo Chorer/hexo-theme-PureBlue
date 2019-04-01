@@ -44,7 +44,7 @@
 					padding-top: 20px;
 				}		
 		font-size: 1.2em;
-		padding-bottom: 8px;
+		padding-bottom: 24px;
 		.post-title-link{
 			color: black;
 			text-decoration: none;
@@ -53,10 +53,10 @@
 			}
 		}
 	}
-	.post .post-time{
+	.post .post-date{
 		color: #BABABA;
 		font-size: 14px;
-		.time-text{
+		.date-text{
 			font-weight: bold;
 			.fa-calendar{
 					margin-right:4px;
@@ -64,7 +64,6 @@
 			}
 		}
 	.post .post-tags{
-		padding-bottom: 30px;
 		font-size: 14px;
 		.post-tags-list{
 			color: #bababa;
@@ -78,6 +77,14 @@
 				border-bottom: 1.5px solid #bababa;
 				opacity: 0.7;
 			}
+		}
+	}
+	.post .post-statistic{
+		font-size: 14px;
+		color: #bababa;
+		padding-bottom: 30px;
+		.text_words,.text_time{
+			font-weight: bold;
 		}
 	}	
 	.post .post-content{
@@ -95,7 +102,6 @@
 		}
 		.code,code{
 			max-width: 650px;
-			display: inline-block;
 			overflow-x:auto;
 			color: #c7254e;
 			font-size: 0.9em;
@@ -152,7 +158,7 @@
 		display: none;
 	}
 	.real-catalog-text{
-		padding-bottom: 6px;
+		padding-bottom: 10px;
 		color: $color;
 		text-align: center;
 		font-size: 17px;
@@ -164,7 +170,7 @@
 		cursor: pointer;
 		color: $color;
 		font-size: 17px;
-		padding-top: 12px;
+		padding-top: 10px;
 		text-align: center;
 		&:hover{
 			opacity: 0.6;
@@ -183,17 +189,19 @@
 					0 3px 1px -2px rgba(0,0,0,.06), 
 					0 1px 5px 0 rgba(0,0,0,.12), 
 					0 -1px 0.5px 0 rgba(0,0,0,.09);
-		.toc-child{
-			padding-left: 12px;
-		}
 		li{
 			list-style: none;
-			line-height: 20px;
+			line-height: 22px;
+		}
+		.toc-level-2{
+			padding-left:20px;
+		}
+		.toc-child{
+			padding-left: 13px;
 		}
 		a{
-			text-decoration: underline;
 			color: #34495e;
-			font-size: 13px;
+			font-size: 14px;
 			&:hover{
 				color: $color;
 			}

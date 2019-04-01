@@ -1,4 +1,4 @@
-# Theme Main Color
+# Color Scheme
 color: 
   PureBlue: false
   GrayBlue: true
@@ -14,11 +14,13 @@ menu:
   Tags: /tags
   About: /about
 
-# Just put your favourite pic into theme directory(source/images)
+# Content
 # Site favicon
 favicon: /images/avatar.gif
+word_count: true
 
-# valine comments
+# Footer
+# Comment
 valine:
   enable: false 
   appid:   # your App ID

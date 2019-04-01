@@ -5,16 +5,17 @@ Menu:
   Tags: Tags
   About: About
 
-Paginator:
-  Prev: Previous Page
-  Next: Next Page
-
 Readmore:
   Text: Read More
 
 Post-info:
   Date: Date
   Tags: Tags 
+  Time: Time
+  Time_unit: mins
+  Count: Count
+  Count_unit: words
+
 
 Catalog-info:
   Text: Article Catalog
@@ -31,3 +32,4 @@ Posts-info:
 
 Categories-info:
   Text: categories in total 
+

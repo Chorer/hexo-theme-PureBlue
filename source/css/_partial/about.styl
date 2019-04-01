@@ -1,0 +1,32 @@
+.about-main-container{
+	min-height: 20rem;
+	font-size: 16px;
+	text-align: center;
+	.about{
+		padding-top: 80px;
+		padding-bottom: 20px;
+	}
+	img{
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		transition: 2.5s all;
+		&:hover{
+			transform: rotate(360deg) scale(1.1);
+		}
+	}
+	span{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: inline-block;
+		font-size: 25px;
+	}
+	p{
+		padding: 0;
+		margin: 0;
+		line-height: 4px;
+	}
+	.fa{
+		color: $color;
+	}
+}

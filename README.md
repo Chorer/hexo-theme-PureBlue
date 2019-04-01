@@ -18,22 +18,20 @@
 ## Install the theme
 
 1. Clone this theme into the `themes` folder under your blog project directory.
-
-`cd themes`
-
-`git clone https://github.com/Chorer/hexo-theme-PureBlue.git`
-
+```
+cd themes
+git clone https://github.com/Chorer/hexo-theme-PureBlue.git`
+```
 2. Modify the site `_config.yml`,it should look like this:
-
-`themes: hexo-theme-PureBlue`
-
+```
+themes: hexo-theme-PureBlue
+```
 
 ## Update Version
-
-`cd themes/hexo-theme-PureBlue`
-
-`git pull`
-
+```
+cd themes/hexo-theme-PureBlue
+git pull`
+```
 ## Install the plugins 
 
 Make sure you have disable the self-contained `highlight` in the site `_config.yml`.

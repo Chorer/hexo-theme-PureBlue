@@ -57,7 +57,6 @@
 		color: #BABABA;
 		font-size: 14px;
 		.date-text{
-			font-weight: bold;
 			.fa-calendar{
 					margin-right:4px;
 				}
@@ -67,7 +66,6 @@
 		font-size: 14px;
 		.post-tags-list{
 			color: #bababa;
-			font-weight: bold;
 		}
 		a{	
 			color: #bababa;
@@ -83,9 +81,6 @@
 		font-size: 14px;
 		color: #bababa;
 		padding-bottom: 30px;
-		.text_words,.text_time{
-			font-weight: bold;
-		}
 	}	
 	.post .post-content{
 		@media screen and (max-width:1024px){
@@ -154,22 +149,21 @@
 		}
 }
 .post-toc{
-	#post-catalog-text,#post-toTop-text{
-		display: none;
+	.fa-list,.fa-chevron-circle-up{
+		margin-right: 14px;
 	}
 	.real-catalog-text{
 		padding-bottom: 10px;
 		color: $color;
 		text-align: center;
 		font-size: 17px;
-	}
-	.fa-list,.fa-chevron-circle-up{
-		margin-right: 14px;
+		font-weight: bold;
 	}
 	.real-toTop-text{
 		cursor: pointer;
 		color: $color;
 		font-size: 17px;
+		font-weight: bold;
 		padding-top: 10px;
 		text-align: center;
 		&:hover{
@@ -209,7 +203,7 @@
 	}	
 }
 .actived{
-	background-color: #fffa7d;
+	color: #ea6f5a;
 }
 #vcomments{
 	width: 800px;

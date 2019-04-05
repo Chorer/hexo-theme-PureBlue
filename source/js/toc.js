@@ -18,7 +18,7 @@ window.onscroll = function()
 var catalog = document.getElementById("post-catalog-text"); 
 var txt = document.createElement("li");
 txt.className="real-catalog-text";
-txt.innerHTML='<i class="fa fa-list"></i>'+catalog.innerHTML;
+txt.innerHTML='<i class="fa fa-list"></i>'+catalog.getAttribute("data-catalog");
 oDiv.insertBefore(txt,oDiv.children[0]);
 
 
@@ -27,7 +27,7 @@ oDiv.insertBefore(txt,oDiv.children[0]);
 var toTop = document.getElementById("post-toTop-text"); 
 var topper =document.createElement("li");
 topper.className="real-toTop-text";
-topper.innerHTML='<i class="fa fa-chevron-circle-up"></i>'+toTop.innerHTML;
+topper.innerHTML='<i class="fa fa-chevron-circle-up"></i>'+toTop.getAttribute("data-toTop");
 oDiv.appendChild(topper);
 
 // catalog highlight

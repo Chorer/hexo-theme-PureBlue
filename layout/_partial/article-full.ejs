@@ -4,6 +4,9 @@
 				<%- item.title || item.link || 'Untitled' %>
 			</a>
 		</div>
+		<div class="post-sub_title">
+			<%- item.subtitle %>
+		</div>
 		<div class="post-date">
 				<span class="date-text">
 					<i class="fa fa-calendar"></i><%= __('Post-info.Date') %>:&nbsp&nbsp<%= item.date.format(config.date_format) %>

@@ -2,10 +2,8 @@
 # Color Scheme
 # ---------------------------------------------------------------
 color: 
-  PureBlue: false
-  GrayBlue: true
-  DeepBlue: false
-  DarkBlue: false
+  PureBlue: true
+  GrayBlue: false
   Gradient: false
 
 # ---------------------------------------------------------------

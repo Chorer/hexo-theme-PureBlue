@@ -1,10 +1,4 @@
-.posts{
-	@media screen and (max-width:1024px){
-					width: 1030px;
-				}
-	@media screen and (max-width:970px){
-					width: 970px;
-				}		
+.posts{		
 	.post{
 		display: flex;
 		display:-webkit-flex;
@@ -13,42 +7,27 @@
 		-webkit-align-items:center;
 		justify-content:center;
 		width: 700px;
-		@media screen and (max-width:1024px){
-						width: 1030px;
-						padding: 0;
-					}
-		@media screen and (max-width:970px){
-						width: 970px;
-						padding: 0;
-					}
-		margin: 1em auto;
-		padding: 30px 70px;
-		border-top: 5px solid $color;
+		margin: 3em auto;
+		padding: 20px 60px;
+		border-radius: 8px;
 		font-size: 15px;
-		box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 
-					0 3px 1px -2px rgba(0,0,0,.06), 
-					0 1px 5px 0 rgba(0,0,0,.12), 
-					0 -1px 0.5px 0 rgba(0,0,0,.09);
+		transition: box-shadow 1s;
+		background-color: white;
 		&:hover{
 				box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.19);
 			}
 	}
 	.post:first-child{
-		margin-top:20px;
+		margin-top:50px;
 	}
-	.post .post-title{
-		@media screen and (max-width:1024px){
-					padding-top: 20px;
-				}
-		@media screen and (max-width:970px){
-					padding-top: 20px;
-				}		
+	.post .post-title{	
 		font-size: 1.4em;
 		padding-top: 15px;
 		padding-bottom: 4px;
 		.post-title-link{
 			color: #34495e;
 			text-decoration: none;
+			transition: color 0.2s
 			&:hover{
 				color:$color;
 			}
@@ -88,15 +67,7 @@
 		color: #999;
 		padding-bottom: 30px;
 	}	
-	.post .post-content{
-		@media screen and (max-width:1024px){
-					padding-left: 40px;
-					padding-right: 40px;
-				}
-		@media screen and (max-width:970px){
-					padding-right: 20px;
-					padding-left: 20px;
-				}		
+	.post .post-content{		
 		a{
 			color: #368CCB;
 			text-decoration: none;
@@ -120,8 +91,9 @@
 			font-size:18px;
 		}
 		code{
-			max-width: 650px;
-			overflow-x:auto;
+				max-width: 650px;
+				overflow-x:auto;
+				font-family: "Lucida console"!important;
 			}	
 		}
 		.littleCode{
@@ -155,14 +127,14 @@
 			display: inline-block;
 			width: auto;
 			height: auto;
-			padding: 3px 18px 2px 20px;
-			border: 2px solid $color;
+			padding: 2px 14px 2px 14px;
+			background-color: $color;
 			border-radius: 2px;
 			&:hover{
-				background-color: $color;
+				background-color:#f47466;
 			}
 			a{
-				color: black;
+				color: white;
 				text-decoration: none;			
 			}
 		}
@@ -170,13 +142,16 @@
 			margin: 0 0 1rem;
 		    padding: .5rem .8rem;
 		    width: 660px;
-		    border-left: 5px solid $color;
+		    border-left: 5px solid #f47466;
 		    background-color: #f5f5f5;
 		    list-style: none;
 		    word-break: break-all;
 		}
 }
 .post-toc{
+	@media screen and (max-width:970px){
+					display: none;
+				}
 	.fa-list,.fa-chevron-circle-up{
 		margin-right: 14px;
 	}
@@ -200,17 +175,14 @@
 	}
 	.toc{
 		border-top: 5px solid $color;
+		border-raidus: 8px;
 		display: inline-block;
 		position: absolute;
 		background-color: white;
 		right: 14px;
-		top: 320px;
+		top: 350px;
 		width: 220px;
 		padding: 12px 20px;
-		box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 
-					0 3px 1px -2px rgba(0,0,0,.06), 
-					0 1px 5px 0 rgba(0,0,0,.12), 
-					0 -1px 0.5px 0 rgba(0,0,0,.09);
 		li{
 			list-style: none;
 			line-height: 22px;

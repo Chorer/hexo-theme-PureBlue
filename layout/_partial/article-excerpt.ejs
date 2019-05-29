@@ -1,44 +1,44 @@
 <article class="post"> 
-		<div class="post-title">
-			<a class="post-title-link" href="<%- config.root %>
-				<%- item.path %>"><%- item.title || 'Untitled' %>
+	<div class="post-title">
+		<a class="post-title-link" href="<%- config.root %>
+			<%- item.path %>"><%- item.title || 'Untitled' %>
+		</a>
+	</div>
+	<% if(item.subtitle){ %>
+		<div class="post-sub_title">
+			<%- item.subtitle %>
+		</div>
+	<% } %>
+	<div class="post-date">
+			<span class="date-text">
+				<i class="fa fa-calendar"></i><%= __('Post-info.Date') %>:&nbsp&nbsp<%= item.date.format(config.date_format) %>
+			</span>
+	</div>
+	<div class="post-tags">
+			<%- partial('article-tags') %>
+	</div>
+	<% if(theme.word_count){ %>
+		<div class="post-statistic">
+			<span class="post-words">
+				<i class="fa fa-pencil-square-o"></i>
+				<span class="text_words"><%= __('Post-info.Count') %>: </span>
+				<span><%= wordcount(item.content) %> <%= __('Post-info.Count_unit') %></span>
+			</span>&nbsp|
+			&nbsp<span class="post-time">
+				<i class="fa fa-clock-o"></i>
+				<span class="text_time"><%= __('Post-info.Time') %>: </span>
+				<span><%= min2read(item.content) %> <%= __('Post-info.Time_unit') %></span>
+			</span>
+		</div>
+	<% } %>
+	<div class="post-content">
+		<%- item.excerpt || item.content %>
+	</div>
+	<% if(item.excerpt){ %>
+		<button class="more-btn">
+			<a href="<%- config.root%><%- item.path %>">
+				<%= __('Readmore.Text') %>
 			</a>
-		</div>
-		<% if(item.subtitle){ %>
-			<div class="post-sub_title">
-				<%- item.subtitle %>
-			</div>
-		<% } %>
-		<div class="post-date">
-				<span class="date-text">
-					<i class="fa fa-calendar"></i><%= __('Post-info.Date') %>:&nbsp&nbsp<%= item.date.format(config.date_format) %>
-				</span>
-		</div>
-		<div class="post-tags">
-				<%- partial('article-tags') %>
-		</div>
-		<% if(theme.word_count){ %>
-			<div class="post-statistic">
-				<span class="post-words">
-					<i class="fa fa-pencil-square-o"></i>
-			        <span class="text_words"><%= __('Post-info.Count') %>: </span>
-			        <span><%= wordcount(item.content) %> <%= __('Post-info.Count_unit') %></span>
-				</span>&nbsp|
-				&nbsp<span class="post-time">
-					<i class="fa fa-clock-o"></i>
-			        <span class="text_time"><%= __('Post-info.Time') %>: </span>
-			        <span><%= min2read(item.content) %> <%= __('Post-info.Time_unit') %></span>
-				</span>
-			</div>
-		<% } %>
-		<div class="post-content">
-			<%- item.excerpt || item.content %>
-		</div>
-		<% if(item.excerpt){ %>
-			<p class="more-btn">
-				<a href="<%- config.root%><%- item.path %>">
-					<%= __('Readmore.Text') %>&nbsp»
-				</a>
-			</p>
-		<% } %>
+		</button>
+	<% } %>
 </article>

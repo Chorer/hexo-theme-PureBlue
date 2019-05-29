@@ -90,16 +90,49 @@
 		h6{
 			font-size:18px;
 		}
-		code{
-				max-width: 650px;
-				overflow-x:auto;
-				font-family: "Lucida console"!important;
-			}	
+		.topBar{
+			height: 45px;
+			background-color: #263238;
+			margin-left:0;
+			position: relative;
+			border-top-left-radius:10px;
+			border-top-right-radius:10px;
+			.dot{
+				position: absolute;
+			    left: 24px;
+			    top: 15px;
+			}
+			.copy{
+				position: absolute;
+				right: 18px;
+				top: 18px;
+				button{
+					background-color: #263238;
+					border: none;
+					outline:none;
+					cursor: pointer;
+				}
+			}
 		}
+		pre{
+			background-color:#263238;
+			max-width: 650px;
+			overflow-x:auto;
+			padding: 0px 20px 20px 61px;
+			margin-top:0;
+			border-radius:0;
+			border-bottom-left-radius:10px;
+			border-bottom-right-radius:10px;
+			code{
+				font-family: "Lucida console"!important;
+				font-size: 14px;
+			}
+		}	
+	}
 		.littleCode{
 			color: #c7254e;
 			font-size: 0.9em;
-			font-family: Consolas;
+			font-family: "Lucida console";
 			vertical-align: middle;
 			background-color: #f6f6f6;
 			padding:0 4px 0 4px;
@@ -109,6 +142,10 @@
 			display: block;
 			margin: 0 auto;
 		}	
+		hr{
+			border: 2px dashed #53b3fa;
+    		margin: 40px 0 40px 0;
+		}
 		table{
 			width: 100%;
 			border-collapse: collapse;
@@ -125,22 +162,47 @@
 		}	
 		.more-btn{
 			display: inline-block;
-			width: auto;
-			height: auto;
-			padding: 2px 14px 2px 14px;
+			width: 110px;
+			height: 30px;
+			text-align:center;
+			padding:2px 10px;
+			margin-top: 10px;
 			background-color: $color;
 			border-radius: 2px;
+			border:none;
+			outline:0;
+			transition: all 0.5s;
 			&:hover{
 				background-color:#f47466;
 			}
+			&:hover a{
+		      padding-right: 18px;
+		    }
+		    &:hover a:after{
+		      opacity: 1;
+		      right: 5px;
+		    }
 			a{
 				color: white;
-				text-decoration: none;			
+				font-size:14px;
+				font-family:Lato;
+				text-decoration: none;	
+				position: relative;
+                transition: 0.5s;
+				&:after{
+				  content: '»';
+			      position: absolute;
+			      opacity: 0;
+			      right: -20px;
+			      top: -5px;
+			      transition: 0.5s;
+			      font-size:20px;
+				}		
 			}
 		}
 		blockquote{
-			margin: 0 0 1rem;
-		    padding: .5rem .8rem;
+			margin: 0 0 16px 0;
+		    padding: 4px 0;
 		    width: 660px;
 		    border-left: 5px solid #f47466;
 		    background-color: #f5f5f5;
@@ -175,12 +237,12 @@
 	}
 	.toc{
 		border-top: 5px solid $color;
-		border-raidus: 8px;
+		border-radius: 4px;
 		display: inline-block;
 		position: absolute;
 		background-color: white;
 		right: 14px;
-		top: 350px;
+		top: 390px;
 		width: 220px;
 		padding: 12px 20px;
 		li{
@@ -191,7 +253,7 @@
 			padding-left:20px;
 		}
 		.toc-child{
-			padding-left: 13px;
+			padding-left: 10px;
 		}
 		a{
 			color: #34495e;
@@ -221,4 +283,18 @@
 		border: 1px solid $color; 
 		color: white;
 	}
+}
+.toast{
+	position: fixed;
+    bottom: 40px;
+    font-size: .8125rem;
+    font-family: Roboto;
+    letter-spacing: -0.5px;
+    left: 43%;
+    color: white;
+    background-color: black;
+    border-radius: 23px;
+    padding: 6px 14px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    transition: all .3s ease;
 }

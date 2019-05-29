@@ -12,7 +12,7 @@
 
 ## Screenshot 
 
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pb.png)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/rwadme.png)
 
 
 ## Install the theme
@@ -51,16 +51,19 @@ And then install the [hexo-prism-plugin](https://github.com/ele828/hexo-prism-pl
 - [x] Support TOC  
 - [x] Support fancybox  
 - [x] Support the third-party comment plugin  
-- [ ] Support the third-party share plugin  
-- [ ] Support website statistics 
+- [x] Support the third-party share plugin  
+- [x] Support website statistics 
 - [ ] Completely using vanilla JavaScript instead of jQuery 
 - [ ] Support responsive design 
-- [ ] Mobile adaptation 
+- [x] Mobile adaptation 
 - [ ] Support styling the codequote highlight 
 
 
 
 ## Change Log
+
+2019.5.29
+* Totally change the css styling
 
 2019.3.31
 * Rewirte the paginator and optimize the code

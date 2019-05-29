@@ -9,12 +9,22 @@ color:
 # ---------------------------------------------------------------
 # Header
 # ---------------------------------------------------------------
+
+
+# random banner
+banner:
+  enable: true
+
+# menu---------------------------------------------------------------
 menu:
-  Home: /
-  Categories: /categories
-  Archives: /archives
-  Tags: /tags
-  About: /about
+  HOME: /
+  CATEGORIES: /categories
+  ARCHIVES: /archives
+  TAGS: /tags
+  ABOUT: /about
+# search  
+local_search:
+  enable: true  #search siwtch
 
 # ---------------------------------------------------------------
 # Content

@@ -22,7 +22,7 @@
     background-color: $color;
   }
 .time-section{
-  padding-left: 30px
+  padding-left: 40px
   position: relative
   .section-year{
     cursor: pointer
@@ -31,7 +31,7 @@
     &:before{
       position: absolute
       left: 8px
-      top: 16px
+      top: 20px
       content: ''
       background-color: white
       width: 12px
@@ -46,35 +46,49 @@
   }  
   .section-list{
     .section-list-item{
-      margin: 20px 0 20px 10px
+      margin: 20px 0 45px 10px
       position: relative
-      &:before{
-        position: absolute
-        left: -29px
-        top: 7px
-        content: ''
-        background-color: $color
-        width: 10px
-        height: 10px
-        border-radius: 50%
-        }
       .archive-title{
         transition: all .3s ease
         font-size: 17px;
         font-weight: bold;
         color: #34495e;
         text-decoration: none;
-        }
-        .archive-title:hover{
+        &:hover{
           color: $color
           padding-left: 10px
           }
+          .circle:after{
+            position: absolute
+            left: -2.33em
+            top: 3.2em
+            content: ''
+            background-color: $color
+            border: 1px solid #53b3fa;
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            transition: all 0.3s;
+          }
+          &:hover .circle:after{
+            background-color:white;
+          }
+        }    
       .archive-date{
-        color: gray
-        font-size: 0.6em
-        margin: 5px 0  
+	        color: #999;
+	        font-size: 14px;
+	        margin: 5px 0  
+          position:absolute;
+          top:45px;
+          left:-160px;
+          transition: all .2s;
+          &:hover{
+            opacity: 0.6;
+            transform: translate(-10px, 0);
+          }
         }
       }
     }      
   }
-}    
+}   
+ 

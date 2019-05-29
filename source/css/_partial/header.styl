@@ -1,44 +1,85 @@
 .header1{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/Blog%20bgPic/bg1.jpg) -20px -300px;
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg1.jpg) -20px -600px;
 }
 .header2{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/Blog%20bgPic/bg2.jpg);
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg2.jpg) -330px -54px;	
 }
 .header3{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/Blog%20bgPic/bg3.jpg);
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg3.jpg) -20px -120px;
 }
-.header{
-	@media screen and (max-width:1024px){
-					width: 1030px;
-				}
-	@media screen and (max-width:970px){
-					width: 970px;
-				}
-	display: flex;
-	display:-webkit-flex;
-	align-items:center;
-	-webkit-align-items:center;
-	justify-content:center ;			
+.header4{
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg4.jpg) -300px -210px;
+}
+.header5{
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg5.jpg)  -140px -370px; 
+}
+.header6{
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg6.jpg)  -240px -432px;
+}
+.header7{
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg7.jpg)   -80px -360px; 
+}
+.header8{
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg8.jpg)  -290px -127px;
+}
+.toptop{
+	background-color:#171f26;
+	height:75px;
+}
+.header{			
 	position: relative;
-	height: 320px;
-	font-family: "Times New Roman";
-	font-weight: bold;
-	.blog-title .logo{
-		text-decoration: none;
-		color: white;
-		font-size: 2.8em;
+	height: 360px;
+	font-family:"-apple-system";
+	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg8.jpg)  -290px -127px;
+	font-weight:bold;
+	.theme{
+		position: absolute;
+		top:10px;
+		left: 40px;
+		a{
+			text-decoration: none;
+			color: white;
+			font-size: 18px;
+		}
+		a:hover{
+			opacity:0.8;
+		}
+		.fa-bars{
+			color: white;
+			padding-right: 3px;
+		}
+	}
+	.blog-title{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		text-align:center;
+		.logo{
+			text-decoration: none;
+			color: white;
+			font-size: 40px;
+			cursor:auto;
+		}
+		.descr{
+			color: white;
+			font-weight:normal;
+		}
+	}
+	.navbar{
+		float:right;
 	}
 	.menu{
-		margin-top: 40px;
-		margin-left: 50px;
+		margin-top:0;
+		margin-right:0;
 		.menu-item{
 			display: inline-block;
-			margin: 7px;
-			padding: 2px 10px 2px 10px;
+			margin: 16px;
+			padding: 2px 0px 2px 10px;
 			.menu-item-link{
 				text-decoration: none;
 				color: white;
-				font-size: 24px;
+				font-size: 12px;
 				position: relative;
 				&:after{
 					content: ""
@@ -58,7 +99,7 @@
 			.menu-item-link2{
 				text-decoration: none;
 				color: white;
-				font-size: 22px;
+				font-size: 12px;
 				position: relative;
 				&:after{
 					content: ""
@@ -70,20 +111,6 @@
 					top: 100%; 
 				}
 			}
-		}
-	}
-	span{
-		position: absolute;
-		top:20px;
-		left: 100px;
-		a{
-			text-decoration: none;
-			color: white;
-			font-size: 20px;
-		}
-		.fa-bars{
-			color: white;
-			padding-right: 3px;
 		}
 	}
 }

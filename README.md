@@ -12,7 +12,7 @@
 
 ## Screenshot 
 
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/rwadme.png)
+![](source/images/readread.png)
 
 
 ## Install the theme

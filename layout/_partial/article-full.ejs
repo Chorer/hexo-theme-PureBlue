@@ -32,6 +32,22 @@
 		<div class="post-content">
 			<%- item.content %>
 		</div>
+		<div class="post-nav">
+			<div class="post-nav-prev">
+				<% if(item.prev){ %>
+					<a href="<%= url_for(item.prev.path) %>" rel="prev" title="<%= item.prev.title %>">
+						<i class="fa fa-chevron-left"></i><%= item.prev.title %>
+					</a>
+				<% } %>	
+			</div>
+			<div class="post-nav-next">
+		      	<% if(item.next){ %>
+			      	<a href="<%= url_for(item.next.path) %>" rel="next" title="<%= item.next.title %>">
+			        	<%= item.next.title %><i class="fa fa-chevron-right"></i>
+			      	</a>
+			    <% } %>  	
+		    </div>
+		</div>		
 </article>
 <div class="post-toc">
 	<div id="post-catalog-text" data-catalog="<%= __('Catalog-info.Text') %>"></div>

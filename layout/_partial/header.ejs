@@ -1,5 +1,5 @@
 <header class="header">
-	<span>
+	<span class="theme">
 		<i class="fa fa-bars"></i> 
 		<a href="https://github.com/Chorer/hexo-theme-PureBlue">
 			PureBlue
@@ -7,12 +7,17 @@
 	</span>
 	<div class="blog-title">
 		<a href="<%- url_for() %>" class="logo"><%= config.title %></a>
+		<div class="descrs">
+			<div class="descr">My Blog</div>
+			<div class="descr">" Do what you love,Love what you do "</div>
+		</div>
 	</div>
 	<nav class="navbar">
 		<ul class="menu">
 			<% for(name in theme.menu) { %>
 				<li class="menu-item">
-					<a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link">
+					<i class="fa fa-<%= theme.menu[name].split(' || ')[1] %>"></i>
+					<a href="<%- url_for(theme.menu[name].split(' || ')[0]) %>" class="menu-item-link">
 						<%= name %>
 					</a>
 				</li>

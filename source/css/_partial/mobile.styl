@@ -21,6 +21,7 @@
 			}
 			.descr{
 				font-size: 1.8rem;
+				display:none;
 			}
 		}
 		.navbar{
@@ -65,34 +66,31 @@
 		.post:first-child{
 			margin-top:1rem;
 		}
+		.post_hover{
+			width: 90%!important;
+			padding-left: 1rem!important;
+		}
 		.post{
-			width: auto;
-			padding: 0;
-			margin-left:0.4rem;
-			margin-right:0.4rem;
-			font-size:1.2rem;
+			padding: 0 1rem;
+			margin:0 auto;
+			width:95%;
+			font-size:1.4rem;			
 			.post-title{
 				padding-top: 2rem;
-				font-size:1.4rem;
+				font-size:1.8rem;
 			}
-			.post-sub_title{
-				font-size: 1.1rem;
-				max-width: 50%;
-			}
-			.post-date{
-				font-size:1.1rem;
-				padding-top:0.8rem;
+			.post-info{
+				font-size:1.3rem;
 			}
 			.post-tags{
-				font-size:1.1rem;
+				a{
+					font-size: 1.3rem;
+				}
 			}
-			.post-statistic{
-				font-size:1.1rem;
-				padding-bottom:0.8rem;
+			.post-sub_title{
+				font-size: 1.2rem;
 			}
 			.post-content{
-				padding-right: 1rem;
-				padding-left: 1rem;
 				overflow:hidden;
 				h1{
 					font-size:1.8rem;
@@ -117,6 +115,9 @@
 				h6{
 					font-size: 1.3rem;
 					margin:0;
+				}
+				center{
+					font-size:1.1rem!important;
 				}
 				blockquote{
 					width:90%;
@@ -153,9 +154,9 @@
 					}
 				}
 				pre{
-					padding-left:0.5rem;
+					padding-left:0.4rem;
 					margin-top:-0.1rem;
-					max-width:38rem;
+					max-width:35.8rem;
 					code{
 						font-size:1rem;
 						.line-numbers-rows > span:before{
@@ -167,18 +168,40 @@
 					}
 				}
 			}
-			.more-btn{
-				margin-top:0;
-				margin-bottom:1rem;
-				padding:0;
-				width:10rem;
-				height:2.8rem;
-				border-radius:1.5rem;
+			.post-nav{
+				padding:1rem;
+				width:auto;
 				a{
-					font-size:1.2rem;
-					&:after{
-						font-size:1.8rem;
-						top:-0.5rem;
+					font-size:1.3rem;
+				}
+				&:before{
+					top:-1.3rem;
+					width:90%;
+				}
+			}
+			.sub-container{
+				padding-left:1rem;
+				.post-tags{
+					.fa{
+						font-size:16px!important;
+					}
+					a{
+						padding:0.3rem 0.5rem;
+					}
+				}
+				.more-btn{
+					margin-top:0;
+					margin-bottom:1rem;
+					padding:0;
+					padding-left:.1rem;
+					width:8rem;
+					height:2.6rem;
+					a{
+						font-size:1.1rem;
+						&:after{
+							font-size:1.8rem;
+							top:-0.6rem;
+						}
 					}
 				}
 			}
@@ -223,18 +246,15 @@
 	/*
 	 * about
 	 */
-	.about{
-		font-size:1.2rem;
-		padding:6rem 2rem 4rem 2rem!important;
+	.about-main-container{
+		font-size:1.4rem;
+		padding:5rem 5rem 1rem 5rem!important;
 		p:first-child{
 			margin-bottom:0;
 			img{
 				width:15rem;
 				height:15rem;
 				margin-bottom:2px;
-			}
-			span{
-				font-size:2rem;
 			}
 		}
 	} 
@@ -384,29 +404,40 @@
 	 	}
 	 } 
 	 .v{
-	 	margin:0!important;
+	 	margin:0.56rem!important;
 	 	width:auto!important;
 	 	.vwrap{
+	 		padding:.3rem!important;
 		 	.vheader .vinput{
-		 		font-size:1.3rem!important;
+		 		font-size:1.1rem!important;
 		 	}
 		 	.vedit{
 		 		#veditor{
 		 			font-size:2rem!important;
+		 			padding-bottom:0!important;
 		 		}
 		 		.vctrl{
 			 		font-size:1.2rem!important;
 			 	}
 		 	}
-		 	.vcontrol .vbtn{
-		 		font-size:1.2rem;
-		 		padding: 0.6rem 2.20rem;
+		 	.vcontrol{
+		 		padding:.4rem;
+		 		padding-top:0!important;
+		 		.vbtn{
+			 		font-size:1.2rem;
+			 		padding: 0.6rem 2.20rem;
+			 	}
 		 	}
 		 }
+		.vlist{
+			.vcard{
+				padding:0 2rem;
+			}
+		} 
 		.info{
 			.txt-right{
 				font-size:1.2rem;
-				padding:1rem;
+				padding:0 1rem;
 			}
 			a{
 				font-size:1.2rem!important;

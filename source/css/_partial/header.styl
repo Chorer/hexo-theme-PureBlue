@@ -1,32 +1,8 @@
-.header1{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg1.jpg) -20px -600px;
-}
-.header2{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg2.jpg) -330px -54px;	
-}
-.header3{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg3.jpg) -20px -120px;
-}
-.header4{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg4.jpg) -300px -210px;
-}
-.header5{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg5.jpg)  -140px -370px; 
-}
-.header6{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg6.jpg)  -240px -432px;
-}
-.header7{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg7.jpg)   -80px -360px; 
-}
-.header8{
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg8.jpg)  -290px -127px;
-}
 .header{			
 	position: relative;
 	height: 360px;
-	font-family:"-apple-system";
-	background: url(https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/pic/bg8.jpg)  -290px -127px;
+	font-family:Lato;
+	background: url(https://raw.githubusercontent.com/Chorer/MyBlog-Pic/master/Myblogs/hf.jpg)  -266px -172px;
 	font-weight:bold;
 	.theme{
 		position: absolute;
@@ -47,19 +23,25 @@
 	}
 	.blog-title{
 		position:absolute;
-		top:50%;
+		top:60%;
 		left:50%;
 		transform: translate(-50%,-50%);
 		text-align:center;
 		.logo{
 			text-decoration: none;
 			color: white;
-			font-size: 40px;
+			font-size: 36px;
 			cursor:auto;
+			padding: 11px 30px;
+			background-color:black;
 		}
-		.descr{
-			color: white;
-			font-weight:normal;
+		.descrs{
+			margin-top:10px;
+			.descr{
+				color: white;
+				font-weight:normal;
+				font-size:18px;
+			}
 		}
 	}
 	.navbar{
@@ -79,7 +61,17 @@
 		.menu-item{
 			display: inline-block;
 			margin: 10px;
-			padding: 2px 0px 2px 10px;
+			padding: 2px 0px 2px 5px;
+			&:before{
+				content:"<i class="fa fa-home"></i>";
+			}
+			.fa{
+				color:white;
+				font-size:13px;
+			}
+			.fa-home{
+				font-size:15px;
+			}
 			.menu-item-link{
 				text-decoration: none;
 				color: white;

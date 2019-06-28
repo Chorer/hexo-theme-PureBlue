@@ -8,8 +8,8 @@ for(var i=0;i<codes.length;i++){
 
 // 生成左图案svg
 var dot_text = '<svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)">';
-dot_text += '<circle cx="5" cy="5" r="5" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="25" cy="5" r="5" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5">';
-dot_text += '</circle><circle cx="45" cy="5" r="5" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>';
+dot_text += '<circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5">';
+dot_text += '</circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>';
 // 生成右图案svg
 var copy_text_before = '<svg width="19.44" height="24" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">';
 copy_text_before += '<path d="M8 0H3.40385C2.55385 0 1.84615 0.669231 1.84615 1.51923V1.84615H1.55769C0.707692 1.84615 0 2.51538 0 3.36538V14.4423C0 15.2923 0.707692 16 1.55769 16H9.55769C10.4077 16 11.0769 15.2923 11.0769 14.4423V14.1538H11.4038C12.2538 14.1538 12.9231 13.4462 12.9231 12.5962V4.92308L8 0ZM8 1.71538L11.2077 4.92308H8V1.71538ZM9.84615 14.4423C9.84615 14.6231 9.71538 14.7692 9.55769 14.7692H1.55769C1.38846 14.7692 1.23077 14.6115 1.23077 14.4423V3.36538C1.23077 3.20769 1.37692 3.07692 1.55769 3.07692H1.84615V12.9038C1.84615 13.7538 2.24615 14.1538 3.09615 14.1538H9.84615V14.4423ZM11.6923 12.5962C11.6923 12.7769 11.5615 12.9231 11.4038 12.9231H3.40385C3.23462 12.9231 3.07692 12.7654 3.07692 12.5962V1.51923C3.07692 1.36154 3.22308 1.23077 3.40385 1.23077H6.76923V6.15385H11.6923V12.5962Z" fill="#858585">';

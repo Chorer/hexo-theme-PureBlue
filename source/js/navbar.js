@@ -10,10 +10,10 @@ if(myURL==home_link_text||myURL.indexOf("page")!=-1){
 else{
 		myNav[0].className="menu-item-link";
 		for(var i=1;i<myNav.length;i++){
-		var links = myNav[i].getAttribute("href");
-		if(myURL.indexOf(links) != -1){
-			myNav[i].className="menu-item-link2";
-		}
+			var links = myNav[i].getAttribute("href");
+			if(myURL.indexOf(links) != -1){
+				myNav[i].className="menu-item-link2";
+			}
 	}
 }
 

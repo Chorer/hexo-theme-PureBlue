@@ -1,24 +1,39 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <%- js('js/navbar.js') %>
+<%- js('js/pace.min.js') %>
 <%- js('js/code.js') %>
 <%- js('js/load.js') %>
-<%- js('js/search.js') %>
 <%- js('js/jquery.fancybox.js') %>
 <%- js('js/jquery.fancyboxStart.js') %>
+<%- js('js/search.js') %>
 <% if(is_post()){ %>
-	<%- js('js/toc.js') %>
-	<%- js('js/jquery.toTop.js') %>
+	<% if( page.toc!= false ){ %>
+		<%- js('js/toc.js') %>
+		<%- js('js/jquery.toTop.js') %>
+	<% } %>
 <% } %>
-<% if(is_home()|| is_archive()){ %>
+<% if(is_home()|| is_archive()|| is_post()){ %>
 	<script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
 	<%- js('js/IndexToTop.js') %>
 <% } %>
 <% if(theme.Addthis.enable){ %>
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<%- theme.Addthis.pubid %>"></script>
 <% } %>
-<% if(theme.banner.enable){ %>
-	<%- js('js/BgPic.js') %>
-<% } %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

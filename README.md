@@ -9,6 +9,8 @@
 
 2.Support zh-CN and en by default
 
+3.Support both PC and mobile
+
 
 ## Screenshot 
 
@@ -34,16 +36,18 @@ git pull`
 ```
 ## Install the plugins 
 
-Make sure you have disable the self-contained `highlight` in the site `_config.yml`.
+For code highlighting:
+* Make sure you have disable the `highlight` in the site `_config.yml`.
 And then install the [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin).Check the link for more details.
 
+For wordcount:
+* Make sure you have enable the `word_count` in the site `_config.yml`.
+And then install the [hexo-wordcount](https://github.com/willin/hexo-wordcount).Check the link for more details.
 
 ## More configuration 
 
-* You can set the language by editing the site `_config.yml` file：
-`language: zh-CN`
+You can check the site `_config.yml` file for more configurations. 
 
-* You can also configure the menu,the color scheme and the valine comment by editing the theme `_config.yml` file .
 
 ## ToDo
 

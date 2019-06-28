@@ -1,12 +1,10 @@
 <% if (item.tags && item.tags.length){ %>
-<%
-    var tags = [];
-    item.tags.forEach(function(tag){
-        tags.push('<a href="' + config.root + tag.path + '"><i class="fa fa-tag"></i> ' + tag.name + '</a>');
-    });
-%>
-    <span class="post-tags-list">
-    	<i class="fa fa-bookmark"></i> <%= __('Post-info.Tags') %>:&nbsp&nbsp&nbsp
-    </span>
-    <%- tags.join(' ') %>
-<% } %>
+    <%
+        var tags = [];
+        tags.push('<i class="fa fa-tags"></i> ');
+        item.tags.forEach(function(tag){
+            tags.push('<a href="' + config.root + tag.path + '"> ' + tag.name + '</a>');
+        });
+    %>
+        <%- tags.join(' ') %>
+    <% } %>

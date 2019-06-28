@@ -1,0 +1,67 @@
+.about-main-container{
+	min-height: 20rem;
+	font-size: 16px;	
+	padding: 50px 140px 0 140px;	
+	.about-top{
+		text-align:center;
+		img.author-favicon{
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			transition: 2.5s all;
+			&:hover{
+				transform: rotate(360deg) scale(1.1);
+			}
+		}
+		p.author-name{
+			margin-top: 0;
+			margin-bottom: 20px;
+			font-size: 25px;
+			font-weight:bold;
+		}
+	}
+	.about-bottom{
+		h3{
+			position:relative;
+			margin:0;
+			&:before{
+				content: "";
+			    position: absolute;
+			    left: -10px;
+			    top: 4px;
+			    bottom: 0;
+			    width: 4px;
+			    height: 25px;
+			    background-color: $color;
+			}
+		}
+		p{
+			margin:0;
+		}
+		.fa{
+			color: #f47466;
+		}
+		ul{
+			margin:0;
+			li{
+				list-style-type:none;
+				&:before {
+				    content: "";
+				    display: inline-block;
+				    width: 5px;
+				    height: 5px;
+				    background-color: #000;
+				    border-radius: 50%;
+				    margin-right:7px;
+				    vertical-align:middle;
+				}
+				a{
+					color:#00c4b6;
+					&:hover{
+						color:#f47466;
+					}
+				}
+			}
+		}
+	}
+}

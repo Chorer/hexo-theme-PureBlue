@@ -1,28 +1,32 @@
 <header class="header">
-	<span class="theme">
-		<i class="fa fa-bars"></i> 
-		<a href="https://github.com/Chorer/hexo-theme-PureBlue">
-			PureBlue
-		</a>	
-	</span>
-	<div class="blog-title">
-		<a href="<%- url_for() %>" class="logo"><%= config.title %></a>
-		<div class="descrs">
-			<div class="descr">My Blog</div>
-			<div class="descr">" Do what you love,Love what you do "</div>
+	<div class="header_top">
+		<span class="theme">
+			<i class="fa fa-bars"></i> 
+			<a href="https://github.com/Chorer/hexo-theme-PureBlue">
+				PureBlue
+			</a>	
+		</span>
+		<nav class="navbar">
+			<ul class="menu">
+				<% for(name in theme.menu) { %>
+					<li class="menu-item">
+						<i class="fa fa-<%= theme.menu[name].split(' || ')[1] %>"></i>
+						<a href="<%- url_for(theme.menu[name].split(' || ')[0]) %>" class="menu-item-link">
+							<%= name %>
+						</a>
+					</li>
+				<% } %>	
+			</ul>
+		</nav>
+	</div>
+	<i id="homelink" data-link="<%= config.url %>/"></i>
+	<div class="header_bottom">
+		<div class="blog-title">
+			<a href="<%- url_for() %>" class="logo"><%= config.title %></a>
+			<div class="descrs">
+				<div class="descr">个人博客</div>
+				<div class="descr">" Do what you love,Love what you do "</div>
+			</div>
 		</div>
 	</div>
-	<nav class="navbar">
-		<ul class="menu">
-			<% for(name in theme.menu) { %>
-				<li class="menu-item">
-					<i class="fa fa-<%= theme.menu[name].split(' || ')[1] %>"></i>
-					<a href="<%- url_for(theme.menu[name].split(' || ')[0]) %>" class="menu-item-link">
-						<%= name %>
-					</a>
-				</li>
-			<% } %>	
-		</ul>
-	</nav>
-	<i id="homelink" data-link="<%= config.url %>/"></i>
 </header>

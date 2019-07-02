@@ -1,61 +1,15 @@
 .posts{		
-	.post{
+	.post_full{
 		position: relative;
-		width: 700px;
+		width: 750px;
 		margin: 3em 0;
-		padding: 20px 60px;
+		padding: 20px 40px;
 		border-radius: 4px;
 		font-size: 15px;
 		transition: box-shadow 1s;
 		background-color: white;
 	}
-	.post_hover{
-		margin: 3em auto!important;
-		padding:20px!important;
-		box-shadow: 0 0 1em 0.5em rgba(0,0,0,.19);
-		.post-title{
-			font-weight:500!important;
-			position:relative;
-			display:inline-block;
-			.post-title-link{
-				&:hover{
-					color:$color;
-				}
-				&:hover::before{
-					visibility: visible;
-    				transform: scaleX(1);
-				}
-				&:before{
-					content: "";
-				    position: absolute;
-				    width: 100%;
-				    height: 2px;
-				    bottom: 8px;
-				    background-color: #53b3fa;
-				    visibility: hidden;
-				    transform: scaleX(0);
-				    transition: .2s ease-in-out;
-				}
-				&:after{
-					content: "";
-				    position: absolute;
-				    left: -20px;
-				    top: 16px;
-				    bottom: 0;
-				    width: 4px;
-				    height:35px;
-				    background-color: #00c4b6;
-				}
-			}
-		}
-		.post-content{
-			padding-left: 20px;
-		}
-	}
-	.post:first-child{
-		margin-top:70px;
-	}
-	.post .post-title{	
+	.post_full .post-title{	
 		font-size: 22px;
 		font-weight:600;
 		padding-top: 15px;
@@ -67,13 +21,13 @@
 			transition: color 0.2s;
 		}
 	}
-	.post .post-sub_title{
+	.post_full .post-sub_title{
 		font-size: 1.1em;
 		color: #99a9bf;
 	}
-	.post .post-info{
+	.post_full .post-info{
 		color: #99a9bf;
-		font-size: 14px;
+		font-size: 15px;
 		padding-top:3px;
 		padding-bottom:12px;
 		.post-tags{
@@ -93,9 +47,9 @@
 			display:inline-block;
 		}
 	}
-	.post .post-content{
+	.post_full .post-content{
 		border-top:1px dashed #99a9bf;
-		padding-top:12px;	
+		padding:12px 0;	
 		min-height: 20px;	
 		a{
 			color: #368CCB;
@@ -212,9 +166,7 @@
 		}	
 	}
 	.post-nav{
-		margin-top:30px;
-		margin-bottom:25px;
-		padding-top:25px;
+		margin: 25px 0;
 		width:100%;
 		position:relative;
 		a{
@@ -264,7 +216,7 @@
 			display:flex;
 			justify-content:space-between;
 			border-top:1px dashed #99a9bf;
-			padding-top:18px;
+			padding-top:10px;
 			.post-tags{
 				.fa-tags{
 					color:#99a9bf;
@@ -274,14 +226,14 @@
 				a{	
 					text-decoration: none;
 					color:white;
-					font-size:17px;
-					font-weight:bold;
+					font-size:14px;
 					background: #c6cbe9;
-				    padding: 3px 10px;
-				    border-radius: 4px;
+				    padding: 6px 12px;
+				    border-radius: 15px;
 				    transition: .3s;
 					&:hover{
 						background: #05d3f9;
+						opacity:0.5;
 					}
 				}
 			}
@@ -381,7 +333,7 @@
 	transition:all .2s ease-in-out;
 }
 #vcomments{
-	width: 820px;
+	width: 825px;
 	margin-left: 0;
 	margin-top: 40px;
 	font-family: "Source Sans pro";
@@ -389,20 +341,29 @@
 		background-color:white;
 		border-radius:8px;
 		padding:6px 15px 15px 15px;
-		input{
-			font-size: .9em;
-			padding-top:6px;
+		.vheader{
+			input{
+				font-size: .9em;
+				padding-top:6px;
+			}
+		}		
+		.vedit{
+			#veditor{
+				font-size: 1em;
+				min-height:2.75rem;
+			}
+			.vctrl{
+				font-size:13px;
+			}
 		}
-		#veditor{
-			font-size: 1em;
-			min-height:2.75rem;
-		}
-		button{
-			padding:0.3rem 1.4rem;
-			&:hover{
-				background: $color;
-				border: 1px solid $color; 
-				color: white;
+		.vcontrol{
+			button{
+				padding:0.4rem 1.4rem;
+				&:hover{
+					background: $color;
+					border: 1px solid $color; 
+					color: white;
+				}
 			}
 		}
 	}

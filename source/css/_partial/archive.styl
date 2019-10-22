@@ -8,7 +8,7 @@
   }
 } 
 .archive{
-  margin-left: 200px
+  margin-left: 30%
   height: 100%
   position: relative
   &:before{
@@ -30,13 +30,13 @@
     margin-left: 10px
     &:before{
       position: absolute
-      left: 8px
+      left: 6px
       top: 20px
       content: ''
-      background-color: white
+      background: #fff
       width: 12px
       height: 12px
-      border: 2px solid $color
+      border: 4px solid $color;
       border-radius: 50%
      } 
     .fa-flag{
@@ -46,36 +46,36 @@
   }  
   .section-list{
     .section-list-item{
-      margin: 20px 0 45px 10px
-      position: relative
+	      margin: 20px 0 45px 10px
+	      position: relative
       .archive-title{
-        transition: all .3s ease
-        font-size: 17px;
-        font-weight: bold;
-        color: #34495e;
-        text-decoration: none;
-        &:hover{
-          color: $color
-          padding-left: 10px
+	        transition: all .3s ease
+	        font-size: 17px;
+	        font-weight: bold;
+	        color: #34495e;
+	        text-decoration: none;
+          &:hover{
+            color: $color
+            padding-left: 10px
           }
           .circle:after{
             position: absolute
             left: -2.33em
             top: 3.2em
             content: ''
-            background-color: $color
-            border: 1px solid #53b3fa;
-            width: 10px
-            height: 10px
+            background: #fff;
+            border: 3px solid $color;
+            width: 6px
+            height: 6px
             border-radius: 50%
             transition: all 0.3s;
           }
           &:hover .circle:after{
-            background-color:white;
+            border: 3px solid #f47466;
           }
         }    
       .archive-date{
-	        color: #999;
+	        color: #99a9bf;
 	        font-size: 14px;
 	        margin: 5px 0  
           position:absolute;
@@ -90,5 +90,5 @@
       }
     }      
   }
-}   
- 
+}
+  

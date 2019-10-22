@@ -40,6 +40,13 @@ for(var i=0;i<blocks.length;i++){
 	var block_width = blocks[i].offsetWidth;
 	blocks[i].previousSibling.style.width = block_width + "px";
 }
+// 动态宽度修正
+window.onresize = function(){
+	for(var i=0;i<blocks.length;i++){
+		var block_width = blocks[i].offsetWidth;
+		blocks[i].previousSibling.style.width = block_width + "px";
+	}
+}
 
 // 绑定点击事件，实现复制功能
 function func_copy(str){

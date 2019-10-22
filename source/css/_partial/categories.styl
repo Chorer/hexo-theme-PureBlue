@@ -1,25 +1,37 @@
 .categories-main-container{
-	margin-top: 80px ;
+	margin-top: 60px ;
 	margin-bottom: 30px;
 	min-height: 30px;
 	.categories-counter{
 		span{
-			font-size: 50px;
+			font-size: 30px;
 		}
 	}
 	li{
-		list-style-type: circle;
+		list-style-type: none;
 		.category-list-link{	
 			text-decoration: none;
 			font-size: 18px;
 			color: #34495e;
+			position:relative;
+			&:before{
+				position:absolute;
+				top: 2px;
+				left:-25px;
+				width: 6px;
+				height: 6px;
+				border: 3px solid $color;
+				border-radius: 50%;
+				background: #fff;
+				content: "";
+			}
 			&:hover{
 				color: $color;
 			}
 		}
 		.category-list-count{
 			font-size: 16px;
-			color: #bbb;
+			color: #99a9bf;
 			&:before{
 				content: " (";
 			}

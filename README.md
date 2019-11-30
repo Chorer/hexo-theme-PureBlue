@@ -11,11 +11,19 @@
 
 3.Support both PC and mobile
 
-
 ## Screenshot 
 
-![](source/images/readread.png)
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098364716.png)
 
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098343948.png)
+
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098375310.png)
+
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098386397.png)
+
+
+
+![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/Snipaste_2019-11-30_15-42-20.png)
 
 ## Install the theme
 

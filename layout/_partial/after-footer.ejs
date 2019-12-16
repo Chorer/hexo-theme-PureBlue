@@ -3,10 +3,11 @@
 <%- js('js/pace.min.js') %>
 <%- js('js/code.js') %>
 <%- js('js/load.js') %>
-<%- js('js/jquery.fancybox.js') %>
-<%- js('js/jquery.fancyboxStart.js') %>
 <%- js('js/search.js') %>
+<%- js('js/post-except.js') %>
 <% if(is_post()){ %>
+	<%- js('js/jquery.fancybox.js') %>
+	<%- js('js/jquery.fancyboxStart.js') %>
 	<% if( page.toc!= false ){ %>
 		<%- js('js/toc.js') %>
 		<%- js('js/jquery.toTop.js') %>
@@ -19,20 +20,6 @@
 <% if(theme.Addthis.enable){ %>
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<%- theme.Addthis.pubid %>"></script>
 <% } %>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -17,5 +17,25 @@ else{
 	}
 }
 
+// 导航条固定
+var headerTop = document.getElementsByClassName("header_top")[0];
+window.onscroll = function(){
+	if(document.documentElement.scrollTop > 0){
+			headerTop.classList.add('header_top_fixed');
+	} else {
+			headerTop.classList.remove('header_top_fixed');
+	}
+}
+
+// 点击箭头向下跳转
+var arrow = document.getElementsByClassName("blog-down")[0];
+arrow.onclick = function(){
+	scrollTo(0,390);	
+}
+
+
+
+
+
 
 

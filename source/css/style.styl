@@ -1,15 +1,7 @@
-if(hexo-config('color.PureBlue')){
-	$color = #53B3FA;
-}
-else if(hexo-config('color.GrayBlue')){
-	$color = #6A93B0;
-}
-else if(hexo-config('color.Gradient')){
-	$color = -webkit-linear-gradient(left, #2874B2 0%, #29c6cd 100%);
-}
+$color = #53B3FA;
 
 ::selection{
-	background-color: #05D3F9;
+	background-color: #00c4b6;
 	color: white;
 }
 ::-webkit-scrollbar
@@ -26,7 +18,7 @@ else if(hexo-config('color.Gradient')){
 	background-color: $color;
 }
 body{
-	background-image: url("https://raw.githubusercontent.com/Chorer/MyBlog-Pic/master/Myblogs/Mybg.png");
+	background-image: url("https://i.loli.net/2019/12/05/tFbgAdpqDZQzkBM.png");
 	font-size: 1.25rem;
 	letter-spacing: 0.5px;
 	color: #34495e;
@@ -34,12 +26,13 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-family: "Lato";				 
+	font-family: "Lato";			 
 }
 .main{
 	max-width: 960px;
 	margin: 0 auto;
 	height: 100%;
+	position:relative;
 	img{
 		cursor:url('image/cross.cur'),auto;
 	}				
@@ -57,5 +50,5 @@ body{
 @import "_partial/about";
 @import "_partial/categories";
 @import "_partial/share";
-@import "_partial/mobile";
 @import "_partial/search"
+@import "_partial/mobile";

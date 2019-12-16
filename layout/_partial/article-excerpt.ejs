@@ -1,40 +1,40 @@
 <article class="post_full post_except"> 
-		<h1 class="post-title">
-			<a class="post-title-link" href="<%- config.root %>
-				<%- item.path %>"><%- item.title || 'Untitled' %>
-			</a>
-		</h1>
-		<% if(item.subtitle){ %>
-			<div class="post-sub_title">
-				<%- item.subtitle %>
-			</div>
-		<% } %>
-		<div class="post-info">
-			<div class="post-date">
-					<i class="fa fa-calendar"></i>&nbsp<%= item.date.format(config.date_format) %>&nbsp&nbsp&nbsp
-			</div>
-			<% if(theme.word_count){ %>
-					<span class="post-words">
-						<i class="fa fa-pencil-square-o"></i>&nbsp<%= wordcount(item.content) %>&nbsp<%= __('Post-info.Count_unit') %>&nbsp&nbsp
-					</span>
-					<span class="post-time">
-						<i class="fa fa-clock-o"></i>&nbsp<%= min2read(item.content) %> <%= __('Post-info.Time_unit') %>&nbsp&nbsp&nbsp
-					</span>
-			<% } %>
-		</div>		
-		<div class="post-content">
-			<%- item.excerpt || item.content %>
+	<h1 class="post-title">
+		<a class="post-title-link" href="<%- config.root %><%- item.path %>">
+			<%- item.title || 'Untitled' %>
+		</a>
+	</h1>
+	<% if(item.subtitle){ %>
+		<div class="post-sub_title">
+			<%- item.subtitle %>
 		</div>
-		<div class="post-sub_container">
+	<% } %>
+	<div class="post-info">
+		<div class="post-date">
+				<i class="fa fa-calendar"></i>&nbsp<%= item.date.format(config.date_format) %>&nbsp&nbsp&nbsp
+		</div>
+		<% if(theme.word_count){ %>
+				<span class="post-words">
+					<i class="fa fa-pencil-square-o"></i>&nbsp<%= wordcount(item.content) %>&nbsp<%= __('Post-info.Count_unit') %>&nbsp&nbsp
+				</span>
+				<span class="post-time">
+					<i class="fa fa-clock-o"></i>&nbsp<%= min2read(item.content) %> <%= __('Post-info.Time_unit') %>&nbsp&nbsp&nbsp
+				</span>
+		<% } %>
+	</div>		
+	<div class="post-content">
+		<a href="<%- config.root %><%- item.path %>">
+			<%- item.excerpt || item.content %>	
+		</a>
+		<div class="default">
+				阅读全文......
+		</div>
+	</div>
+	<% if(item.tags && item.tags.length){ %>
+		<div class="post-sub_container">		
 			<span class="post-tags">				
 				<%- partial('article-tags') %>
-			</span>
-			<% if(item.excerpt){ %>
-				<button class="more-btn">
-					<a href="<%- config.root%><%- item.path %>">
-						<%= __('Readmore.Text') %>
-					</a>
-				</button>
-			<% } %>
+			</span>			
 		</div>
+	<% } %>
 </article>

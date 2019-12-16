@@ -11,7 +11,7 @@ window.onscroll = function()
 {
     var s = document.body.scrollTop || document.documentElement.scrollTop;
     if(s>H) {
-        post_toc.style = "position:fixed;top:5px;";
+        post_toc.style = "position:fixed;top:5px;right:63px";
         toc.scrollTop = (s-H)/60;
     } else {
         post_toc.style = "";

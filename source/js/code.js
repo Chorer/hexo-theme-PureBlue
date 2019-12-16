@@ -94,7 +94,13 @@ for(var i=0;i<buttons.length;i++){
 	};
 }
 
-
+// li样式
+var lis = document.getElementsByTagName("li");
+for(var i = 0;i<lis.length;i++){
+	var circle = document.createElement("span");
+	circle.className = "circle";
+	lis[i].appendChild(circle);
+}
 
 
 

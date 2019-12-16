@@ -1,5 +1,35 @@
-
-@media screen and (max-width:625px){
+@media screen and (max-width:1366px){
+	.local-search{
+		top: -5rem;
+    left: 7rem;
+    right: 0;
+	}
+	.search-text{
+		display: inline-block;
+    margin-right: 1.2rem;
+	}
+	.fa-search{
+		left: 0.6rem;
+    top: 1.1rem;
+	}
+	.header{
+		margin-bottom:-7rem;
+	}
+}
+@media screen and (max-width:952px){
+	.local-search{
+    display:none;
+	}
+	.post-toc{
+		display: none;
+	}
+	.header{
+		.header_top{
+			padding:12px 120px;
+		}
+	}
+}
+@media screen and (max-width:680px){
 	/* html */
 	html{
 		font-size: 62.5%;
@@ -7,167 +37,175 @@
 	 }
 	/* header */
 	.header{
-		height: 23rem;
-		.theme{
-			left:1rem;
-			font-size:1.8rem;
-			a{
-				font-size:1.6rem;
-			}
-		}
-		.blog-title{
-			.logo{
-				font-size: 2rem;
-			}
-			.descr{
-				font-size: 1.8rem;
+		height: 26rem;
+		padding: 0;
+		.header_top{
+			flex-grow:1;
+			padding: 2rem 0 0 0;
+			.theme{
 				display:none;
 			}
-		}
-		.navbar{
-			float:none;
-			padding-top: 17rem;
-			display:flex;
-			justify-content:center;
-			.menu{		
-				padding:0;		
-				.menu-item{
-					margin:0.7rem;
-					.menu-item-link{
-						font-size: 1.1rem;
-					}
-					.menu-item-link2{
-						font-size: 1.1rem;
+			.navbar{
+				width: 100%	
+				.menu{		
+					padding:0;	
+					display:flex;
+					justify-content:space-around;
+					.menu-item{
+						padding:0;
+						.fa{
+							font-size: 1.4rem;
+						}
+						.menu-item-link{
+							font-size: 1.4rem;
+						}
+						.menu-item-link2{
+							font-size: 1.4rem;
+						}
 					}
 				}
 			}
 		}
-	}
-	.local-search{
-		display: none;
+		.header_bottom{
+			flex-grow:10;
+			.blog-title{
+				.logo{
+					font-size: 3rem;
+				}
+				.descr{
+					font-size: 1.6rem!important;
+				}
+			}
+			.blog-down{
+				top:95%;
+			}
+		}
 	}
 	/* footer */
 	.footer{
-		font-size:1.2rem;
-		height: 7rem;
-		padding-top: 6rem;
-		margin-top: 0.2rem;
+		font-size:1.4rem;
+		height: 10rem;
+		margin-top: 1rem;
 		p{
 			margin: 0 auto;
 		}
 	}
-	/*
-	 * post
-	 */
-	.posts{
-		img{
-			width:80%;
+	/* post */
+	.local-search{
+		display:none;
+		top: -6rem!important;
+    left: 3rem!important;	
+  }  
+	.fa-search{
+		left: 1rem;
+    top: 1.8rem;
+	}
+	.post_full{
+		padding: 0 1rem;
+		margin:0 auto;
+		width:95%;
+		font-size:1.4rem;			
+		.post-title{
+			padding-top: 2rem;
+			font-size:1.8rem;
 		}
-		.post:first-child{
-			margin-top:1rem;
+		.post-info{
+			font-size:1.3rem;
 		}
-		.post_hover{
-			width: 90%!important;
-			padding-left: 1rem!important;
+		.post-tags{
+			a{
+				font-size: 1.3rem;
+			}
 		}
-		.post{
-			padding: 0 1rem;
-			margin:0 auto;
-			width:95%;
-			font-size:1.4rem;			
-			.post-title{
-				padding-top: 2rem;
+		.post-sub_title{
+			font-size: 1.4rem;
+		}
+		.post-content{
+			overflow:hidden;
+			h1{
 				font-size:1.8rem;
+				margin:0;
 			}
-			.post-info{
-				font-size:1.3rem;
+			h2{
+				font-size:1.7rem;
+				margin:0;
 			}
-			.post-tags{
-				a{
-					font-size: 1.3rem;
+			h3{
+				font-size: 1.6rem;
+				margin:0;
+			}
+			h4{
+				font-size: 1.5rem;
+				margin:0;
+			}
+			h5{
+				font-size: 1.4rem;
+				margin:0;
+			}
+			h6{
+				font-size: 1.3rem;
+				margin:0;
+			}
+			li{
+				.circle{
+					left:-16px!important;
+					width:0.4rem!important;
+					height:0.4rem!important;
 				}
 			}
-			.post-sub_title{
-				font-size: 1.2rem;
+			center{
+				font-size:1.1rem!important;
 			}
-			.post-content{
-				overflow:hidden;
-				h1{
-					font-size:1.8rem;
-					margin:0;
+			blockquote{
+				width:90%;
+				padding-left:1.5rem;
+				ul{
+					padding-left:1rem;
 				}
-				h2{
-					font-size:1.7rem;
-					margin:0;
-				}
-				h3{
-					font-size: 1.6rem;
-					margin:0;
-				}
-				h4{
-					font-size: 1.5rem;
-					margin:0;
-				}
-				h5{
-					font-size: 1.4rem;
-					margin:0;
-				}
-				h6{
-					font-size: 1.3rem;
-					margin:0;
-				}
-				center{
-					font-size:1.1rem!important;
-				}
-				blockquote{
-					width:90%;
-					padding-left:0.8rem;
-					ul{
-						padding-left:1rem;
-					}
-				}
-				iframe{
-					max-width:38rem;
-					height:22rem;
-				}
-				.topBar{
-					height:4rem;
-					.dot{
-						top:1.1rem;
-						left:1.6rem;
-						svg{
-							circle{
-								cx:10;
-								cy:10;
-								r:10;
-							}
-						}
-					}
-					.copy{
-						z-index:100;
-						top:1.2rem;
-						right:0.7rem;
-						svg{
-							width:2rem;
-							height:2rem;
+			}
+			iframe{
+				max-width:38rem;
+				height:22rem;
+			}
+			.topBar{
+				height:4rem;
+				.dot{
+					top:1.1rem;
+					left:1.6rem;
+					svg{
+						circle{
+							cx:10;
+							cy:10;
+							r:10;
 						}
 					}
 				}
-				pre{
-					padding-left:0.4rem;
-					margin-top:-0.1rem;
-					max-width:35.8rem;
-					code{
-						font-size:1rem;
-						.line-numbers-rows > span:before{
-							line-height:2.3rem;
-						}
-						.line-numbers-rows{
-							left:-5.8rem;
+				.copy{
+					z-index:1;
+					top:1.2rem;
+					right:0.7rem;
+					svg{
+						width:2rem;
+						height:2rem;
+					}
+				}
+			}
+			pre{
+				padding-left:0.4rem;
+				margin-top:-0.1rem;
+				max-width:35.8rem;
+				code{
+					font-size:1.2rem;
+					.line-numbers-rows{
+						top:-0.1rem;
+						left:-5.8rem;
+						span{
+							height:2.08rem;
 						}
 					}
 				}
 			}
+		}
 			.post-nav{
 				padding:1rem;
 				width:auto;
@@ -179,52 +217,57 @@
 					width:90%;
 				}
 			}
-			.sub-container{
-				padding-left:1rem;
-				.post-tags{
-					.fa{
-						font-size:16px!important;
-					}
-					a{
-						padding:0.3rem 0.5rem;
-					}
+		}
+		.post-toc{
+			display:none;
+		}
+	/* index */
+	.post_except{
+		width:90%;
+		padding: 0 0 1rem 0;
+		.post-title{
+			.post-title-link:after{
+				left:-1rem;
+			}
+		}
+		.post-sub_container{
+			padding-top:.5em;
+			.post-tags{
+				display:block;
+				.fa{
+					font-size:16px!important;
 				}
-				.more-btn{
-					margin-top:0;
-					margin-bottom:1rem;
-					padding:0;
-					padding-left:.1rem;
-					width:8rem;
-					height:2.6rem;
-					a{
-						font-size:1.1rem;
-						&:after{
-							font-size:1.8rem;
-							top:-0.6rem;
-						}
+				a{
+					padding:0.3rem 0.5rem;
+				}
+			}
+		.more-btn{
+			padding:.0 0 0 .5rem;
+			height:2.6rem;
+			width:6em;
+			a{
+				font-size:1.3rem;
+				&:after{
+					font-size:1.8rem;
+					top: -1rem;
+    			right: -3.4em;
 					}
 				}
 			}
-			.post-toc{
-				display:none;
-			}
-		} 
-	}
-	/*
-	 *  tags
-	 */
+		}
+	}	
+	/* tags */
 	.tags-main-container{
-		margin-top:6rem;
-		padding-left: 0;
+		margin:0.8rem;
+		margin-top:10rem;
 		.tags-counter{
 			font-size:2rem;
-			margin-bottom:0;
+			margin-top:0;
 			span{
 				font-size:2.5rem;
 			}
 		}
 		.tags-tagscloud{
-			padding-left: 3.5rem;
 			a{
 				font-size: 1.2rem!important;
 				line-height:3rem;
@@ -262,7 +305,7 @@
 	 * catgories
 	 */
 	.categories-main-container{
-		margin-top:3rem;
+		margin-top:10rem;
 		.categories-counter{
 			margin-left: 5rem;
 			margin-bottom: 0;
@@ -301,10 +344,12 @@
 	/*
 	 * archives
 	 */
+	.archive-page-container{
+		margin-top:10rem;
+	} 
 	 .archive{
-	 	margin-left:10rem;
+	 	margin-left:25%;
 	 	margin-bottom:1rem;
-	 	padding-right:4rem;
 	 	&::before{
 	 		left: 0.5rem;
 	 	}
@@ -314,10 +359,10 @@
 	 			font-size: 2rem;
 	 			padding-top:2.8rem;
 	 			&::before{
-	 				width: 1.5rem;
-	 				height: 1.5rem;
+	 				width: 1rem;
+	 				height:1rem;
 	 				left: -0.3rem;
-	 				top: 4rem;
+	 				top: 3.6rem;
 	 			}
 	 			.fa{
 					font-size:3.4rem;
@@ -327,18 +372,18 @@
 				.section-list-item{
 					margin-bottom:3rem;
 					.archive-title{
-						font-size: 1.2rem!important;
+						font-size: 1.3rem!important;
 						.circle:after{
-							width: 1rem;
-							height: 1rem;
-							left: -1.9rem;
-		 					top: 3.7rem;
+							width: 0.8rem;
+							height: 0.8rem;
+							left: -2.0rem;
+		 					top: 3.5rem;
 						}
 					}
 					.archive-date{
 						top:2.8rem;
 						left:-10.5rem;
-						font-size:1.2rem;
+						font-size:1.3rem;
 					}
 				}
 	 		}
@@ -346,7 +391,6 @@
 	 }
 	 .posts-counter{
 		 	font-size: 2rem;
-		 	margin-top: 6rem;
 		 	span{
 				font-size: 2.5rem;
 		 	}
@@ -366,10 +410,8 @@
 	 .pager-nav{
 	 	padding:0;
 	 	.page-number{
-	 		width:2rem;
-	 		height:2rem;
-	 		font-size:1.2rem;
-	 		margin:1rem;
+	 		font-size:1.5rem;
+	 		margin:0.5rem;
 	 	}
 	 	.extend{
 	 		font-size:1.4rem;

@@ -1,8 +1,9 @@
+<%- partial('_partial/search') %>
+<div id="blog-down-reach"></div>
 <section class="posts">
 	<% page.posts.each(function (item){ %>
 		<%- partial('_partial/article-excerpt',{item: item}) %>
 	<% })%>
 </section>
-<%- partial('_partial/search') %>
 <%- partial('_partial/paginator') %>
 

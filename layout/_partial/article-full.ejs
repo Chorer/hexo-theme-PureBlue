@@ -1,58 +1,58 @@
 <article class="post_full"> 
-		<h1 class="post-title">
-			<div class="post-title-link">
-				<%- item.title || item.link || 'Untitled' %>
-			</div>
-		</h1>
-		<% if(item.subtitle){ %>
-			<div class="post-sub_title">
-				<%- item.subtitle %>
-			</div>
+	<h1 class="post-title">
+		<div class="post-title-link">
+			<%- item.title || item.link || 'Untitled' %>
+		</div>
+	</h1>
+	<% if(item.subtitle){ %>
+		<div class="post-sub_title">
+			<%- item.subtitle %>
+		</div>
+	<% } %>
+	<div class="post-info">
+		<div class="post-date">
+				<i class="fa fa-calendar"></i>&nbsp<%= item.date.format(config.date_format) %>&nbsp&nbsp&nbsp
+		</div>
+		<% if(theme.word_count){ %>
+				<span class="post-words">
+					<i class="fa fa-pencil-square-o"></i>&nbsp<%= wordcount(item.content) %>&nbsp<%= __('Post-info.Count_unit') %>&nbsp&nbsp
+				</span>
+				<span class="post-time">
+					<i class="fa fa-clock-o"></i>&nbsp<%= min2read(item.content) %> <%= __('Post-info.Time_unit') %>&nbsp&nbsp&nbsp
+				</span>
 		<% } %>
-		<div class="post-info">
-			<div class="post-date">
-					<i class="fa fa-calendar"></i>&nbsp<%= item.date.format(config.date_format) %>&nbsp&nbsp&nbsp
-			</div>
-			<% if(theme.word_count){ %>
-					<span class="post-words">
-						<i class="fa fa-pencil-square-o"></i>&nbsp<%= wordcount(item.content) %>&nbsp<%= __('Post-info.Count_unit') %>&nbsp&nbsp
-					</span>
-					<span class="post-time">
-						<i class="fa fa-clock-o"></i>&nbsp<%= min2read(item.content) %> <%= __('Post-info.Time_unit') %>&nbsp&nbsp&nbsp
-					</span>
-			<% } %>
-			<div class="post-tags">
-				<%- partial('article-tags') %>
-			</div>
+		<div class="post-tags">
+			<%- partial('article-tags') %>
 		</div>
-		<div class="post-content">
-			<%- item.content %>
+	</div>
+	<div class="post-content">
+		<%- item.content %>
+	</div>
+	<div class="post-nav">
+		<div class="post-nav-prev">
+			<% if(item.prev){ %>
+				<a href="<%= url_for(item.prev.path) %>" rel="prev" title="<%= item.prev.title %>">
+					<i class="fa fa-angle-double-left"></i>&nbsp<%= item.prev.title %>
+				</a>
+			<% } %>	
 		</div>
-		<div class="post-nav">
-			<div class="post-nav-prev">
-				<% if(item.prev){ %>
-					<a href="<%= url_for(item.prev.path) %>" rel="prev" title="<%= item.prev.title %>">
-						<i class="fa fa-angle-double-left"></i>&nbsp<%= item.prev.title %>
-					</a>
-				<% } %>	
+		<div class="post-nav-next">
+					<% if(item.next){ %>
+						<a href="<%= url_for(item.next.path) %>" rel="next" title="<%= item.next.title %>">
+							<%= item.next.title %>&nbsp<i class="fa fa-angle-double-right"></i>
+						</a>
+				<% } %>  	
 			</div>
-			<div class="post-nav-next">
-		      	<% if(item.next){ %>
-			      	<a href="<%= url_for(item.next.path) %>" rel="next" title="<%= item.next.title %>">
-			        	<%= item.next.title %>&nbsp<i class="fa fa-angle-double-right"></i>
-			      	</a>
-			    <% } %>  	
-		    </div>
-		    <div class="clear"></div>
-		</div>		
+			<div class="clear"></div>
+	</div>		
 </article>
 <% if(item.toc!= false){ %>
-	<div class="post-toc">
-		<div class="toc-top">
-			<i class="fa fa-th-large"></i><%= __('Catalog-info.Text') %>
-		</div>
-		<%- toc(page.content, {list_number: false}) %>
+<div class="post-toc">
+	<div class="toc-top">
+		<%= __('Catalog-info.Text') %>
 	</div>
+	<%- toc(page.content, {list_number: false}) %>
+</div>
 <% } %>
 <%- partial('../third party/comments') %>
 

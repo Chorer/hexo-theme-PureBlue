@@ -1,5 +1,5 @@
 .categories-main-container{
-	margin-top: 60px ;
+	margin-top: 200px ;
 	margin-bottom: 30px;
 	min-height: 30px;
 	.categories-counter{
@@ -42,15 +42,42 @@
 	}
 }
 .category-page-container{
+	margin-top: 180px;
 	.category-page-title{
 		margin-top:25px;
+		text-align:center;
 		.category_title{
 			display: inline-block;
-			padding-left:5px;
+			padding:0 5px;
 			color: #34495e;
 			font-family: "Sourece Sans pro";
 			font-size: 26px;	
 			font-weight:bold;		
+			position:relative;
+			&::before{
+				z-index: 1;
+		    position: absolute;
+		    bottom: -8px;
+		    content: '';
+		    display: block;
+		    width: 50px;
+		    height: 3px;
+		    right: 100%;
+		    top: 50%;
+		    background: #34495e;
+			}
+			&::after{
+				z-index: 1;
+		    position: absolute;
+		    bottom: -8px;
+		    content: '';
+		    display: block;
+		    width: 50px;
+		    height: 3px;
+		    left: 100%;
+		    top: 50%;
+		    background: #34495e;
+			}
 		}
 		.fa-folder-open{
 			color: #34495e;

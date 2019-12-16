@@ -1,9 +1,8 @@
 <header class="header">
 	<div class="header_top">
 		<span class="theme">
-			<i class="fa fa-bars"></i> 
-			<a href="https://github.com/Chorer/hexo-theme-PureBlue">
-				PureBlue
+			<a href="<%- url_for() %>">
+				My blog
 			</a>	
 		</span>
 		<nav class="navbar">
@@ -22,10 +21,15 @@
 	<i id="homelink" data-link="<%= config.url %>/"></i>
 	<div class="header_bottom">
 		<div class="blog-title">
-			<a href="<%- url_for() %>" class="logo"><%= config.title %></a>
+			<a href="https://github.com/Chorer/hexo-theme-PureBlue" class="logo"><%= config.title %></a>
 			<div class="descrs">
 				<div class="descr">个人博客</div>
 				<div class="descr">" Do what you love,Love what you do "</div>
+			</div>
+			<div class="blog-down">
+				<a href="javascript:void(0);">
+					<i class="fa fa-angle-double-down fa-2x"></i>
+				</a>
 			</div>
 		</div>
 	</div>

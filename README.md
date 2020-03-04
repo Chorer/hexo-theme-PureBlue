@@ -66,9 +66,9 @@ You can check the site `_config.yml` file for more configurations.
 - [x] Support the third-party share plugin  
 - [x] Support website statistics 
 - [ ] Completely using vanilla JavaScript instead of jQuery 
-- [ ] Support responsive design 
+- [x] Support responsive design 
 - [x] Mobile adaptation 
-- [ ] Support styling the codequote highlight 
+- [x] Support the codequote highlight 
 
 
 

@@ -13,6 +13,7 @@
 
 ## Screenshot 
 
+![](https://github.com/Chorer/hexo-theme-PureBlue/blob/master/source/images/readread.png)
 ![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098364716.png)
 
 ![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098343948.png)

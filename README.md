@@ -13,17 +13,17 @@
 
 ## Screenshot 
 
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098364716.png)
+![](https://github.com/Chorer/hexo-theme-PureBlue/blob/master/preview/home.png)
 
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098343948.png)
+![](https://github.com/Chorer/hexo-theme-PureBlue/blob/master/preview/categories.png)
 
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098375310.png)
+![](https://github.com/Chorer/hexo-theme-PureBlue/blob/master/preview/archives.png)
 
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/screely-1575098386397.png)
+![](https://github.com/Chorer/hexo-theme-PureBlue/blob/master/preview/tags.png)
 
 
 
-![](https://myblog-1258623898.cos.ap-chengdu.myqcloud.com/PureBlue-readme/Snipaste_2019-11-30_15-42-20.png)
+![](https://github.com/Chorer/hexo-theme-PureBlue/blob/master/preview/mock.png)
 
 ## Install the theme
 

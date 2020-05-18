@@ -42,7 +42,7 @@ themes: hexo-theme-PureBlue
 cd themes/hexo-theme-PureBlue
 git pull`
 ```
-## Install the plugins 
+## Plugins and features
 
 For code highlighting:
 * Make sure you have disable the `highlight` in the site `_config.yml`.
@@ -52,7 +52,19 @@ For wordcount:
 * Make sure you have enable the `word_count` in the site `_config.yml`.
 And then install the [hexo-wordcount](https://github.com/willin/hexo-wordcount).Check the link for more details.
 
-## More configuration 
+For sharing：
+
+* Make sure you have enable the `Addthis` in the theme `_config.yml`.And then fill in your own pubid which you have acquired in [Addthis](https://www.addthis.com/).
+
+  Remember that you don't need to install any plugin for this feature.
+
+For comments:
+
+* Make sure you have enable the `valine` in the theme `_config.yml`.And then fill in your own appid and appkey which you have acquired in [LeanCloud](https://leancloud.cn/). Check [valine docs](https://valine.js.org/) for more details. 
+
+  Remember that you don't need to install any plugin for this feature.
+
+## More configurations
 
 You can check the site `_config.yml` file for more configurations. 
 

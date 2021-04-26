@@ -18,7 +18,6 @@ var copy_text_after = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height
 
 // 将图案插入代码块中
 var blocks = document.getElementsByClassName("line-numbers");
-var container = document.getElementsByClassName("post-content")[0];
 for(var i=0;i<blocks.length;i++){
 	// 创建元素
 	var dot = document.createElement("span");
@@ -35,7 +34,7 @@ for(var i=0;i<blocks.length;i++){
 	copy.appendChild(button);
 	bar.appendChild(copy);
 	bar.appendChild(dot);
-	container.insertBefore(bar,blocks[i]);
+	blocks[i].parentNode.insertBefore(bar,blocks[i]);
 	// 宽度修正
 	var block_width = blocks[i].offsetWidth;
 	blocks[i].previousSibling.style.width = block_width + "px";
